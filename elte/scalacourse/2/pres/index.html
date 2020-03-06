@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0 minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="marcolago">
+
+	<meta property="og:title" content="Flowtime.js A HTML Presentation Framework">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta property="og:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta property="og:site_name" content="Flowtime.js">
+	<meta property="fb:admins" content="1293500397">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta name="twitter:title" content="Flowtime.js - A HTML Presentation Framework">
+	<meta name="twitter:description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+	<meta name="twitter:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta name="twitter:creator" content="@marcolago">
+
+	<meta name="description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+
+	<title>Flowtime.js</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="css/flowtime.css">
+	<link rel="stylesheet" href="css/themes/default.css">
+	<link rel="stylesheet" href="assets/css/prism.css">
+
+
+	<link rel="apple-touch-icon-precomposed" 						href="img/touch-icon-iphone.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="72x72" 		href="img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="114x114" 	href="img/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="144x144" 	href="img/touch-icon-ipad-retina.png">
+
+	<link rel="apple-touch-startup-image" href="img/startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="img/startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="stylesheet" href="highlight/styles/default.css">
+        <script src="highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body class="">
+
+	<div class="flowtime">
+		<div class="ft-section" data-id="section-1">
+			<div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="Options: An introduction">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<p class="page-title">Programfejlesztes Scalaban</p>
+						<p class="page-title">2020.03.02.</p>
+						<img src="img/scala_logo.png">
+					</div>
+				</div>
+			</div>
+			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
+				<h1>Mai temak</h1>
+				<p class="ft-fragment">OOP attekinto</p>
+				<p class="ft-fragment">Osztalyok, oroklodes</p>
+				<p class="ft-fragment">Konstruktorok</p>
+				<p class="ft-fragment">Traitek, tobbszoros oroklodes</p>
+                                <p class="ft-fragment">Objectek</p>
+				<p class="ft-fragment">Case classok</p>
+			</div>
+                </div>
+		<div class="ft-section" data-id="section-2">
+			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
+				<h1>OOP attekinto</h1>
+				<p class="ft-fragment">Osztalyalapu (C++, Java, C#, Scala, JS15+)</p>
+				<p class="ft-fragment">Prototipusalapu (JS)</p>
+				<p class="ft-fragment">Oroklodes</p>
+				<p class="ft-fragment">Enkapszulacio</p>
+				<p class="ft-fragment">Dynamic dispatch</p>
+				<p class="ft-fragment">Kompozicio es delegacio</p>
+				<p class="ft-fragment">Polimorfizmus (altipusossag)</p>
+				<p class="ft-fragment">Nyilt rekurzio</p>
+			</div>
+			<div id="/section-2/page-2" class="ft-page" data-id="page-2">
+				<h1>Osztalyok</h1>
+				<div class="ft-fragment">
+                                    <pre><code class="scala">class C { 
+    private val x: Int = 3
+    def printX() = println(x)
+}
+val myObject = new C
+myObject.printX()</code></pre>
+				</div>
+				<div class="ft-fragment">
+				<pre><code class="scala">abstract class AC { 
+    protected def x: Int = 3
+    def printX() = println(x)
+}
+val myObject = new AC // error: class AC is abstract; cannot be instantiated</code></pre>
+                                </div>
+                                <div class="ft-fragment">
+                                <pre><code class="scala">class IC extends AC { 
+    override val x: Int = 4
+}
+val myObject = new IC
+myObject.printX() // 4</code></pre>
+                                </div>
+                                <div class="ft-fragment">
+                                <pre><code class="scala">class IC extends AC with C { }
+// error: class C needs to be a trait to be mixed in</code></pre>
+                                </div>
+			</div>
+			<div id="/section-2/page-3" class="ft-page" data-id="page-3">
+				<h1>Konstruktorok</h1>
+				<div class="ft-fragment"><p>Osztalykonstruktorok</p>
+                                <pre><code class="scala">class ClassCtor(
+    val x: Int,
+    protected var y: String = "a",
+    private val z: Double = 3, // val z: ...
+    // lazy val lazee: Int ⟹ val lazee: => Int
+) // {...}</code></pre>
+                                </div>
+			<div class="ft-fragment"><p>Egyeb konstruktorok</p>
+                                <pre><code class="scala">class MultipleCtors(val x: Int, y: Int) {
+    def this(x: Int) = this(x, 4)
+}</code></pre>
+			</div>
+			<p class="ft-fragment">Konstruktorlanc: elobb-utobb osztalykonstruktor
+                    </div>
+                
+                    <div id="/section-2/page-4" class="ft-page" data-id="page-3">
+				<h1>Traitek</h1>
+				<p class="ft-fragment">Deklaracio es definicio</p>
+				<p class="ft-fragment">Fieldek es metodusok</p>
+				<p class="ft-fragment">Nem lehet konstruktoruk</p>
+				<p class="ft-fragment">Abstract classnak lehet!</p>
+				<p class="ft-fragment"><code class="scala">extends ... with ... with ...</code></p>
+			<div class="ft-fragment">
+                                <pre><code class="scala">trait Point {
+    protected val x: Int = 4
+    protected val y: Int
+    
+    def draw(relativeTo: Point) = { ... }
+}
+
+class TwoDPoint extends Point</pre></code>
+			</div>
+                    </div>
+                
+                    <div id="/section-2/page-5" class="ft-page" data-id="page-3">
+				<h1>Tobbszoros oroklodes</h1>
+				<p class="ft-fragment">Tobb traitet is lehet mixinelni</p>
+				<p class="ft-fragment">Diamond problema</p>
+				<p class="ft-fragment">Linearizacio</p>
+				<p class="ft-fragment">Osztaly -> extends linearizalt hierarchia -> with linearizalt hierarchia</p>
+				<p class="ft-fragment">Minden egyeb field es metodus is elerheto</p>
+				<p class="ft-fragment"><code class="scala">extends ... with ... with ...</code></p>
+				<p class="ft-fragment">Minden egyeb field es metodus is elerheto: <code class="scala">super[T]</code></p>
+			<div class="ft-fragment">
+                                <pre><code class="scala">trait A { def x = 3 }
+trait B { def x = 3 }
+class AB extends A with B //error: class AB inherits conflicting members
+class AB extends A with B {
+    override def x = super[A].x
+}
+
+class BA extends B with A {
+    override def x = super[B].x
+}</pre></code>
+			</div>
+                    </div>                
+                
+                <div id="/section-2/page-5" class="ft-page" data-id="page-3">
+				<h1>Objectek</h1>
+				<p class="ft-fragment">Nem letezik a <code class="scala">static</code> keyword</p>
+				<p class="ft-fragment">De lehetnek statikusnak tuno elemeink</p>
+				<div class="ft-fragment">
+                                <pre><code class="scala">object O {
+    def x = 3
+    private val z = 4
+    protected def y = 3
+}</pre></code>
+			</div>
+                                <p class="ft-fragment">Nem lehet konstruktoruk: classloading</p>
+                                <p class="ft-fragment">objectek kozott nincs oroklodes</p>
+				<p class="ft-fragment">Companion object: class vagy trait + object ugyanazzal a nevvel</p>
+                                <p class="ft-fragment">Path-dependent type</p>
+                                <div class="ft-fragment">
+                                <pre><code class="scala">class Outer { 
+    class Inner
+    def printI(x: Inner) = println(x.getClass) 
+}</pre></code>
+			</div>
+			<p class="ft-fragment">Inner objectek is path-dependentek</p>
+                    </div>                
+                
+                    <div id="/section-2/page-6" class="ft-page" data-id="page-3">
+                        <h1>Case classok</h1>
+                        <p class="ft-fragment">Value classok</p>
+                        <p class="ft-fragment">Algerbai adattipus (product es sum)</p>
+                        <p class="ft-fragment">Konstruktorban szereplo adattagok alapjan</p>
+                        <p class="ft-fragment"><code class="scala">getters, setters, hashCode, equals, copy, toString, apply, unapply</code></p>
+                        <p class="ft-fragment">case object</p>
+                        <p class="ft-fragment">Nincs oroklodes (ekvivalencia)</p>
+                    </div>   
+                
+                <div id="/section-2/page-6" class="ft-page" data-id="page-3">
+                        <h1>Egyeb tulajdonsagok</h1>
+                        <p class="ft-fragment">sealed trait es class</p>
+                        <p class="ft-fragment">final class</p>
+                        <p class="ft-fragment">final field</p>
+                        <p class="ft-fragment">enum helyett trait + case object</p>
+                        <p class="ft-fragment"><code class="scala">def apply()</code></p>
+                        <p class="ft-fragment">trait mixin objektum inicializalasakor</p>
+                    </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </div>
+        </div>
+                
+
+<!-- 	<a href="https://github.com/marcolago/flowtime.js"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a> -->
+
+	<script src="js/brav1toolbox.js"></script>
+	<script src="js/flowtime.js"></script>
+	<!-- <script src="js/flowtime.min.js"></script> -->
+	<script src="assets/js/prism.js"></script>
+
+	<script type="text/javascript">
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1228618-10']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.backFromPageToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		// Flowtime.parallaxInPx(true);
+		//
+		// event management
+		// Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		Flowtime.onNavigation(onNavigation);
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+</body>
+</html>
