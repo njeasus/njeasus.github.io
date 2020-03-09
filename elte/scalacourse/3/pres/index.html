@@ -178,6 +178,38 @@ f3(5) // = 14</code></pre>
 
                     </div>
                 
+                <div id="/section-2/page-6" class="ft-page" data-id="page-6">
+				<h1>Rekurzio</h1>
+				<div class="ft-fragment">
+                                    <pre><code class="scala">def factorial(n: Int): Int = n match {
+    case 0 => 1
+    case _ => n * factorial(n-1)
+}
+                                    </code></pre>
+				</div>
+				<p class="ft-fragment">Tailrecursion</p>
+				<div class="ft-fragment">
+                                    <pre><code class="scala">@tailrec def factorial(n: Int): Int = n match {
+    case 0 => 1
+    case _ => n * factorial(n-1)
+}</code></pre>
+				</div>
+				<p class="ft-fragment">could not optimize @tailrec annotated method factorial: it contains a recursive call not in tail position</p>
+                                <div class="ft-fragment">
+                                    <pre><code class="scala">new Function1[Int, Int] {
+    def apply (x:Int): Int = {
+        @tailrec def loop(x: Int, acc: Int = 1): Int = {
+        if (x &lt;= 1) acc
+        else loop(x-1, x*acc)
+    }
+    loop(x)
+  }
+}</code></pre>
+				</div>
+                    </div>
+                
+                
+                
                     <div id="/section-2/page-6" class="ft-page" data-id="page-6">
 				<h1>Closure</h1>
 				<p class="ft-fragment">A fuggveny definialasakor scope-ban elerheto definiciok elerhetoek maradnak</p>
