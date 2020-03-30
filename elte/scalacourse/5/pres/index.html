@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0 minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="marcolago">
+
+	<meta property="og:title" content="Flowtime.js A HTML Presentation Framework">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta property="og:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta property="og:site_name" content="Programfejlesztes Scalaban">
+	<meta property="fb:admins" content="1293500397">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta name="twitter:title" content="Flowtime.js - A HTML Presentation Framework">
+	<meta name="twitter:description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+	<meta name="twitter:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta name="twitter:creator" content="@marcolago">
+
+	<meta name="description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+
+	<title>Flowtime.js</title>
+	<link rel="stylesheet" href="../../infra/assets/css/reset.css">
+	<link rel="stylesheet" href="../../infra/css/flowtime.css">
+	<link rel="stylesheet" href="../../infra/css/themes/default.css">
+	<link rel="stylesheet" href="../../infra/assets/css/prism.css">
+
+
+	<link rel="apple-touch-icon-precomposed" 						href="../../infra/img/touch-icon-iphone.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="72x72" 		href="../../infra/img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="114x114" 	href="../../infra/img/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="144x144" 	href="../../infra/img/touch-icon-ipad-retina.png">
+
+	<link rel="apple-touch-startup-image" href="../../infra/img/startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="../../infra/img/startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="stylesheet" href="../../infra/highlight/styles/default.css">
+        <script src="../../infra/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body class="">
+
+	<div class="flowtime">
+		<div class="ft-section" data-id="section-1">
+			<div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="Options: An introduction">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<p class="page-title">Programfejlesztes Scalaban</p>
+						<p class="page-title">Implicitek</p>
+						<img src="../../infra/img/scala_logo.png">
+					</div>
+				</div>
+			</div>
+			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
+				<h1>Mai temak</h1>
+				<p class="ft-fragment">Mik azok az implicitek?</p>
+				<p class="ft-fragment">Implicit argumentumlista</p>
+                                <p class="ft-fragment">Implicit fuggvenyek</p>
+				<p class="ft-fragment">Implicit osztalyok</p>
+				<p class="ft-fragment">View bounds</p>
+				<p class="ft-fragment">Context bounds</p>
+			</div>
+                </div>
+		<div class="ft-section" data-id="section-2">
+			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
+				<h1>Mik azok az implicitek?</h1>
+				<p class="ft-fragment">Olyan elemek, amik nincsenek explicit megemlitve</p>
+				<p class="ft-fragment">A compiler megprobalja behelyettesiteni</p>
+				<p class="ft-fragment"><code class="scala">implicit</code> keyword</p>
+				<p class="ft-fragment">Implicit resolution</p>
+				<div class="ft-fragment"><p>Szabalyok</p>
+                                    <ul>
+                                        <li class="ft-fragment">Marking: csak az implicitnek jelolt entitasok</p>
+                                        <li class="ft-fragment">Scope: az implicitnek egyszeru azonositokent a scope-ban kell lennie</p>
+                                        <li class="ft-fragment">Egyszerre egy: a compiler csak egy implicitet alkalmaz</p>
+                                        <li class="ft-fragment">Explicitek elore: ha van explicit ertek megadva, nincs implicit alkalmazas</p>
+                                        <li class="ft-fragment">Elofordulas: konverzio egy elvart tipusra, konverzio egy <code class="scala">apply</code> fogadasara vagy implicit parameterek</p>
+                                        <li class="ft-fragment">Elnevezes: az implicit neve nem szamit</p>
+                                    </ul>
+				</div>
+                            </div>
+                            
+                            
+			<div id="/section-2/page-2" class="ft-page" data-id="page-2">
+				<h1>Impicit feloldas a gyakorlatban</h1>
+				<p class="ft-fragment">Amikor a compiler egy tipushibat vagy egy applikacios hibat talal</p>
+				<p class="ft-fragment">Megnezi a scope-ban levo impliciteket</p>
+				<p class="ft-fragment">Megprobalja "kijavitani" a hibat</p>
+				<p class="ft-fragment">Magas komplexitas</p>
+				<p class="ft-fragment">Lassu, az elerheto implicitek szamaval aranyosan lassul</p>
+				<p class="ft-fragment">A typer vegzi, akar a 20%-at is kiteheti</p>
+                            </div>
+                </div>
+                
+                               <div class="ft-section" data-id="section-3">
+                    <div id="/section-3/page-1" class="ft-page" data-id="page-1">
+				<h1>Implicit parameterlistak</h1>
+				<p class="ft-fragment">Egy parameterlistat lehet implicitnek jelolni</p>
+				<div class="ft-fragment"><pre><code class="scala">def apply(x: Int)(implicit y: Int)
+				
+impicit val myInt = 3
+apply(2)
+apply(2)(4) // explicit nyer</code></pre></div>  
+				<p class="ft-fragment">Lehet akar konstruktor is (osztaly es masodlagos)</p>
+				<div class="ft-fragment"><pre><code class="scala">class Addition(val x: Int)(implicit private val y: Int) {
+    private val result = x + y
+    def printer() = println(result)
+}
+
+implicit val operand = 4
+val a = new Addition(4)
+a.printer()</code></pre></div>  
+                        <p class="ft-fragment">A parameterlistaban lehetnek <code class="scala">var</code>ok, <code class="scala">val</code>ok es <code class="scala">def</code>ek</p>
+                    </div>
+
+                    <div id="/section-3/page-2" class="ft-page" data-id="page-2">
+                        <h1>Felhasznalasuk</h1>
+                        <p class="ft-fragment">Kontextus automatiks passzolgatasa</p>        
+                        <div class="ft-fragment"><pre><code class="scala">implicit val context = new Context()
+computation.step1(...)//(context)
+computation.step2(...)//(context)
+computation.step3(...)//(context)</code></pre></div>
+                        <p class="ft-fragment">DSL-ek folyekonyabba tetele</p>
+                        <p class="ft-fragment">Hasznaljuk mindig a legszukebb tipust!</p>
+                    </div>
+                    
+                </div>
+                    
+            <div class="ft-section" data-id="section-4">
+                    <div id="/section-4/page-1" class="ft-page" data-id="page-1">
+				<h1>Implicit fuggvenyek</h1>
+				<div class="ft-fragment"><pre><code class="scala">implicit def int2String(i: Int): String</code></pre></div>
+				<div class="ft-fragment"><pre><code class="scala">class A(val x: Int)
+class B(val y: Int)
+
+implicit def a2B(v: A): B = new B(v.x)
+
+def printer(s: B) = println(s.y)
+
+printer(new A(3)) // => printer(a2B(new A(3)))</code></pre></div>
+                        <p class="ft-fragment">Ajanlott nevezektan: tipusA2TipusB</p>
+                        <p class="ft-fragment">A signatura minding A => B, tobb parameterrel nincs ertelme</p>
+                        <div class="ft-fragment"><p>De tuple-okkel mukodik:</p><pre><code class="scala">class Aa(val x: Int)
+class Ab(val x: Int)
+class B(val y: Int)
+
+implicit def a2B(a: (Aa, Ab)): B = new B(a._1.x + a._2.x) // Csunya, mindig hasznaljuk az unapplyt!
+
+def printer(s: B) = println(s.y)
+
+printer(new Aa(3), new Ab(2)) // Nem is kell explicit tuple</code></pre></div>    
+                    </div>
+                <div id="/section-4/page-2" class="ft-page" data-id="page-2">
+				<h1>Felhasznalasuk</h1>
+				<p class="ft-fragment">Tipuskonverzio</p>
+				<p class="ft-fragment">API enrichment: Javas osztalyok "Scalasitasa"</p>
+				<div class="ft-fragment"><pre><code class="scala">import scala.collection.JavaConverters._
+
+val source = java.util.Arrays.asList("hi", "bye")
+val target: List[String] = source.asScala // asJava metodus nincs a java.util.ArrayList-en
+				</code></pre></div>
+				<p class="ft-fragment">Folyekonyabb API-k</p>
+                    </div>
+                
+                    
+                    </div>
+                    
+                    
+                    
+                    
+                            <div class="ft-section" data-id="section-5">
+                    <div id="/section-5/page-1" class="ft-page" data-id="page-1">
+				<h1>Implicit osztalyok</h1>
+				<p class="ft-fragment">Scala 2.10 ota</p>
+				<p class="ft-fragment"><code class="scala">implicit</code> kulcsszo a class elott</p>
+				<p class="ft-fragment">Az elsodleges konstruktor reszt vehet implicit konverzioban</p>
+				<div class="ft-fragment"><p>Megszoritasok</p>
+                                    <ul>
+                                        <li class="ft-fragment">Egy kulso trait/class/object-ben kell oket definialni</p>
+                                        <li class="ft-fragment">Csak egy nemimplicit parameteruk lehet</p>
+                                        <li class="ft-fragment">Egyeduli szimbolumnak kell lenniuk ezzel a nevvel a scope-ban</p>
+                                    </ul>
+				</div>
+				
+                    </div>
+                    <div id="/section-5/page-2" class="ft-page" data-id="page-2">
+				<h1>Implicit osztalyok</h1>
+				<div class="ft-fragment"><pre><code class="scala">object Helpers {
+  implicit class IntWithTimes(x: Int) {
+    def times[A](f: => A): Unit = {
+      def loop(current: Int): Unit =
+        if(current > 0) {
+          f
+          loop(current - 1)
+        }
+        loop(x)
+      }
+    }
+}
+
+import Helpers._ // Hozzuk a scope-ba
+
+5 times println("HI")</code></pre></div>
+                    </div>
+
+                <div id="/section-5/page-2" class="ft-page" data-id="page-2">
+                            <h1>Felhasznalasuk</h1>
+                            <p class="ft-fragment">Nagyon hasonloak az implicit fuggvenyekhez</p>
+                            <p class="ft-fragment">Szintaktikai cukorka</p>
+                            <div class="ft-fragment"><p>Ebbol:</p><pre><code class="scala">implicit class RichInt(n: Int) extends Ordered[Int] {
+  def min(m: Int): Int = if (n &lt;= m) n else m
+}</code></pre></div>   
+                          <div class="ft-fragment"><p>Ezt generalja a fordito:</p><pre><code class="scala">class RichInt(n: Int) extends Ordered[Int] {
+  def min(m: Int): Int = if (n &lt;= m) n else m
+}
+
+implicit final def RichInt(n: Int): RichInt = new RichInt(n)</code></pre></div>     
+                            <p class="ft-fragment">Gyakori volt egy uj tipus letrehozasa az implicit konverter melle</p>
+                    </div>
+                    </div>
+                <div class="ft-section" data-id="section-6">
+                    <div id="/section-6/page-1" class="ft-page" data-id="page-1">
+                        <h1>View bounds</h1>
+                        <p class="ft-fragment">Eloirja, hogy egy A tipust hasznalhassuk B-kent</p>
+                        <p class="ft-fragment">Legyen hozza implicit konverter a hivas helyen</p>
+                        <p class="ft-fragment">Nem osszekeverendo a context bounds-dzal</p>
+                        <div class="ft-fragment"><pre><code class="scala">def printer2[A &lt;% B](a: A) = println(a.y)</code></pre></div>
+                        <p class="ft-fragment">Viszonylag ritkan hasznalt feature</p>
+                        <p class="ft-fragment">Scala 2.10 ota deprecated</p>
+                        <p class="ft-fragment">Majdnem az osszes felhasznalasa kivalthato context bounds-dzal</p>
+                    </div>
+                    
+                    </div>
+                    
+                        
+                <div class="ft-section" data-id="section-7">
+                    <div id="/section-7/page-1" class="ft-page" data-id="page-1">
+                        <h1>Context bounds</h1>
+                        <p class="ft-fragment">Eloirja, hogy egy A tipushoz legyen egy B[A] tipusu <em>ertekunk</em></p>
+                        <div class="ft-fragment"><p>Tipikus szintaxis:</p><pre><code class="scala">def m[A: B](a: A) {
+                        
+    ...
+    implicitly[B[A]].methodOnB // Itt hivjuk az implicit konvertert
+}</code></pre></div>
+                        <div class="ft-fragment"><p>Kifejtve:</p><pre><code class="scala">def m[A](a: A)(implicit ev: B[A]) {
+    ...
+    a.methodOnB
+}</code></pre></div>
+                        <p class="ft-fragment">ev: evidence roviditese, ez ugyanis a bizonyitek, hogy A-t B[A]-kent tudjuk hasznalni</p>
+                        <p class="ft-fragment">A masodik valtozat az ajanlott</p>
+                    </div>
+                    
+                    <div id="/section-7/page-2" class="ft-page" data-id="page-1">
+                        <h1>Felhasznalasuk</h1>
+                        <p class="ft-fragment">Typeclass pattern</p>
+                        <p class="ft-fragment">Collection: CanBuildFrom</p>
+                        <p class="ft-fragment">ClassTag, TypeTag es Manifest: type erasure kikerulesere</p>
+                    </div>
+                    
+                    </div>
+                    
+                </div>
+        
+        </div>
+                
+
+<!-- 	<a href="https://github.com/marcolago/flowtime.js"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a> -->
+
+	<script src="../../infra/js/brav1toolbox.js"></script>
+	<script src="../../infra/js/flowtime.js"></script>
+	<!-- <script src="js/flowtime.min.js"></script> -->
+	<script src="../../infra/assets/js/prism.js"></script>
+
+	<script type="text/javascript">
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1228618-10']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.backFromPageToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		// Flowtime.parallaxInPx(true);
+		//
+		// event management
+		// Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		Flowtime.onNavigation(onNavigation);
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+</body>
+</html>
