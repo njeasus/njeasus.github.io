@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0 minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="marcolago">
+
+	<meta property="og:title" content="Flowtime.js A HTML Presentation Framework">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta property="og:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta property="og:site_name" content="Programfejlesztes Scalaban">
+	<meta property="fb:admins" content="1293500397">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta name="twitter:title" content="Flowtime.js - A HTML Presentation Framework">
+	<meta name="twitter:description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+	<meta name="twitter:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta name="twitter:creator" content="@marcolago">
+
+	<meta name="description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+
+	<title>Flowtime.js</title>
+	<link rel="stylesheet" href="../../infra/assets/css/reset.css">
+	<link rel="stylesheet" href="../../infra/css/flowtime.css">
+	<link rel="stylesheet" href="../../infra/css/themes/default.css">
+	<link rel="stylesheet" href="../../infra/assets/css/prism.css">
+
+
+	<link rel="apple-touch-icon-precomposed" 						href="../../infra/img/touch-icon-iphone.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="72x72" 		href="../../infra/img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="114x114" 	href="../../infra/img/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="144x144" 	href="../../infra/img/touch-icon-ipad-retina.png">
+
+	<link rel="apple-touch-startup-image" href="../../infra/img/startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="../../infra/img/startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="stylesheet" href="../../infra/highlight/styles/default.css">
+        <script src="../../infra/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body class="">
+
+	<div class="flowtime">
+		<div class="ft-section" data-id="section-1">
+			<div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="Options: An introduction">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<p class="page-title">Programfejlesztes Scalaban</p>
+						<p class="page-title">Scala Standard Library</p>
+						<img src="../../infra/img/scala_logo.png">
+					</div>
+				</div>
+			</div>
+			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
+                            <h1>Mai temak</h1>
+                            <p class="ft-fragment">Scala Standard Library</p>
+                            <p class="ft-fragment">Collections</p>
+                            <p class="ft-fragment">Tuple</p>
+                            <p class="ft-fragment">Option</p>
+                            <p class="ft-fragment">Either</p>
+                            <p class="ft-fragment">Try</p>
+                            <p class="ft-fragment">Future</p>
+                            <p class="ft-fragment">Egyeb</p>
+			</div>
+                </div>
+		<div class="ft-section" data-id="section-2">
+			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
+                            <h1>Collections</h1>
+                            <p class="ft-fragment"><code class="scala">scala.collection.{ mutable, immutable }</code></p>
+                            <p class="ft-fragment">Immutable preferalt</p>
+                            <p class="ft-fragment">Kozos os a collection package alatt, valtozatok az immutable es mutable alatt</p>
+                            <p class="ft-fragment">Fejlett API-k</p>
+                            <p class="ft-fragment">Higher-order fuggvenyek</p>
+                            <p class="ft-fragment">Gyakran wrappelnek Java collectiont</p>
+                            <p class="ft-fragment">Altalaban jo (vagy elfogadhato) performancia, de oda kell figyelni!</p>
+                        </div>
+                            
+                            
+			<div id="/section-2/page-2" class="ft-page" data-id="page-2">
+                            <h1>Immutable collections</h1>
+                            <img src="collections-immutable-diagram.svg" style="width:60%"/>
+                        </div>
+                        
+                        <div id="/section-2/page-3" class="ft-page" data-id="page-3">
+                            <h1>Traitek</h1>
+                            <div class="ft-fragment"><p>Traversable: bejarhato</p><pre><code class="scala">def foreach[U](f: Elem => U): Unit, ++, map, flatMap, collect, isEmpty, nonEmpty, size, head, last, tail, slice, take, drop, 
+filter, partition, groupBy, exists, forall, count, foldLeft, foldRight, foldLeft, foldRight, mkString</code></pre></div>
+                            <div class="ft-fragment"><p>Iterable: iteralhato</p><pre><code class="scala">def iterator: Iterator[A], grouped, sliding, zip, sameElements</code></pre></div>
+                            <div class="ft-fragment"><p>Set: halmaz, distinct elemek</p><pre><code class="scala">contains, apply, subsetOf, +, ++, -, --, intersect, union, diff</code></pre></div>
+                            <div class="ft-fragment"><p>Map: key-value, distinct keyek</p><pre><code class="scala">contains, apply, get, getOrElse, isDefinedAt, +, ++, updated, keys, keySet, values, filterKeys, mapValues</code></pre></div>
+                            <div class="ft-fragment"><p>Seq: felsorolas</p><pre><code class="scala">apply, isDefinedAt, length, indexOf, lastIndexOf, +:, :+, updated, 
+sorted, sortWith, sortBy, reverse, startsWith, endsWith, contains</code></pre></div>
+                        </div>
+                
+                    <div id="/section-2/page-3" class="ft-page" data-id="page-3">
+                        <h1>Fontosabb muveletek</h1>
+                        <div class="ft-fragment"><p>Az osszes elemre applikaljuk a fuggvenyt</p><pre><code class="scala">def foreach[U](f: Elem => U): Unit</code></pre></div>
+                        <div class="ft-fragment"><p>Az osszes elemet transzformaljuk a fuggvennyel, es kapunk egy uj collectiont</p><pre><code class="scala">def map[B](f: (A) => B): Traversable[B]</code></pre></div>
+                        <div class="ft-fragment"><p>Az collection elemeit mint kulonallo collectionoket transzformaljuk a fuggvennyel, es kapunk egy uj collectiont, ahol a transzformalt elemek egyesevel szerepelnek</p><pre><code class="scala">def flatMap[B](f: (A) => GenTraversableOnce[B]): Traversable[B] </code></pre></div>
+                        <div class="ft-fragment"><p>Egy binaris operatort alkalmazunk egy kezdoertekre es a collection osszes elemere, egy erteket kapva</p><pre><code class="scala">def foldLeft[B](z: B)(op: (B, A) => B): B </code></pre></div>
+                        <div class="ft-fragment"><p>Egy kulcsot vagy ha hianyzik, egy default erteket adunk vissza</p><pre><code class="scala">def getOrElse(key: K, default: => V): V </code></pre></div>
+                </div>
+                <div id="/section-2/page-4" class="ft-page" data-id="page-4">
+                    <h1>List</h1>
+                    <p class="ft-fragment">Lancolt lista</p>
+                    <p class="ft-fragment">LIFO</p>
+                    <p class="ft-fragment"><code class="scala">scala.Nil</code> es <code class="scala">scala.::</code></p>
+                    <div class="ft-fragment"><pre><code class="scala">val l = List(1, 2, 3)
+val l2 = 3 :: l
+l match {
+    case head :: tail =>
+    case Nil =>
+}</code></pre></div>
+                    <p class="ft-fragment"><code class="scala">LazyList</code>: teljesen lazy kiertekeles</p>
+                    <p class="ft-fragment">Mutable "valtozat": <code class="scala">mutable.ArrayBuffer</code>, array backing</p>
+                </div>
+                
+                <div id="/section-2/page-4" class="ft-page" data-id="page-4">
+                    <h1>HashMap</h1>
+                    <p class="ft-fragment">Hash trie</p>
+                    <p class="ft-fragment">Kicsit modernebb es gyorsabb, mint a hash table + lancolt lista</p>
+                    <p class="ft-fragment">Minden elemnek 32 subtree</p>
+                    <div class="ft-fragment"><pre><code class="scala">val h: Map[Int, String] = HashMap(1 -> "first", 2 -> "second")
+h.getOrElse(3, "third")
+h.map{ case (k, v) => k -> v * 2}
+h.keySet.foreach(println)
+h.values.foreach(println)
+val h2 = h + (3 -> "third")</code></pre></div>
+                    <p class="ft-fragment"><code class="scala">HashSet</code>: ugyanez az implementacio, kulcsok nelkul</p>
+                </div> 
+                </div>
+                    
+                    <div class="ft-section" data-id="section-3">
+                    <div id="/section-3/page-1" class="ft-page" data-id="page-1">
+                        <h1>Tuple</h1>
+                        <p class="ft-fragment">Product type</p>
+                        <p class="ft-fragment">n db elem sorrendfuggo felsorolasa</p>
+                        <div class="ft-fragment"><p>Implementacio</p><pre><code class="scala">final case class Tuple&lt;N&gt; extends Product&lt;N&gt;</code></pre></div>
+                        <p class="ft-fragment">1 &leq; N &leq; 22</p>
+                        <div class="ft-fragment"><p>Melyebben integralva a nyelvbe: Tuple mint tipus</p><pre><code class="scala">def returnsATuple(): (String, String)</code></pre></div>
+                    </div>
+                    
+                    <div id="/section-3/page-2" class="ft-page" data-id="page-2">
+                        <h1>Tuple</h1>
+                        <p class="ft-fragment">Elemek elerhetoek _1, ..., _N fieldekkent</p>
+                        <div class="ft-fragment"><p>Hasznaljunk unapplyt es parcialis fuggvenyt ha kell</p><pre><code class="scala">val l: Seq[(String, String)] = ...
+  
+l.foreach {
+    case(e1, e2) => ...
+}</code></pre></div>
+                        <p class="ft-fragment">A tuple nem a lustak case classa</p>
+                        <p class="ft-fragment">Ha el tudjuk nevezni az elemeket, akkor inkabb keszitsunk egy case classt</p>
+                    </div>
+                </div>
+                    
+            <div class="ft-section" data-id="section-4">
+                <div id="/section-4/page-1" class="ft-page" data-id="page-1">
+                    <h1>Option</h1>
+                    <p class="ft-fragment">Egy opcionalis ertek reprezentalasa</p>
+                    <p class="ft-fragment">Letezik: Some(v), nem letezik: None</p>
+                    <p class="ft-fragment">Maybe monad</p>
+                    <div class="ft-fragment"><p>null-lal is lehet hianyzo erteket reprezentalni, de</p>
+                        <ul>
+                          <li class="ft-fragment"><p>A null nem tipushelyes (nincs is tipusa a JVM-en)</p></li>
+                          <li class="ft-fragment"><p>Nem ellenorizheto</p></li>
+                          <li class="ft-fragment"><p>Nem kenyszeritheto ki null-check</p></li>
+                        </ul>
+                    </div>
+                    <p class="ft-fragment">Hasznaljuk parameterkent es fieldkent is (vs java.util.Optional)</p>
+                    <p class="ft-fragment">java.util.NoSuchElementException</p>
+                </div>
+                <div id="/section-4/page-2" class="ft-page" data-id="page-2">
+                    <h1>Option</h1>
+                    <div class="ft-fragment"><pre><code class="scala">val maybeNot: Option[Int] = None
+val maybe: Option[Int] = Some(3)
+  
+maybe.flatMap{v => Some(v * 3)} // bind
+
+maybe.getOrElse(0) // "kimenekites" a Monadbol
+
+val maybeString = maybe.map { _.toString } // None.map => None
+
+maybe.foreach(println) // None.foreach => no-op
+
+maybe.foldLeft("0") { (_, v) => v.toString } // map + getOrElse tipushelyesen
+
+maybe.isDefined
+  
+maybe.isEmpty</code></pre></div>
+                </div>
+            </div>
+                    
+                
+            <div class="ft-section" data-id="section-5">
+                <div id="/section-5/page-1" class="ft-page" data-id="page-1">
+                    <h1>Either</h1>
+                    <p class="ft-fragment">Sum type</p>
+                    <p class="ft-fragment">Ket lehetseges ertek kozul mindig csak az egyik letezik</p>
+                    <div class="ft-fragment"><p>Implementacio</p><pre><code class="scala">sealed abstract class Either[+A, +B]</code></pre></div>
+                    <p class="ft-fragment">Ket altipus: Left es Right</p>
+                    <p class="ft-fragment">Eithert nem tudunk letrehozni, csak Leftet es Rightot</p>
+                    <p class="ft-fragment">Konvencio szerint a Left tartalmazza a rossz/negativ/hibas/hianyzo erteket</p>
+                    <p class="ft-fragment">"Jobbra hajlik": map, foreach, etc a Right erteken vegrehatjtodik, a Leften No-op</p>
+                </div>        
+                <div id="/section-5/page-2" class="ft-page" data-id="page-2">        
+                    <h1>Either</h1>
+                     <div class="ft-fragment"><pre><code class="scala">val left: Either[Int, String] = Left(0)
+val right: Either[Int, String] = Right("SUCCESS")
+
+left.left // Left(0)
+left.right // Right("SUCCESS")
+
+left.map { s: String => s + " Mapped" } // Left(0)
+right.map { s => s"$s Mapped"}// Right("SUCCESS Mapped")
+
+left.flatMap(s => Right(s"$s Mapped"))
+Left(left).joinLeft // Left(0)
+Right(left).joinLeft // Right(Left(0))
+Left(right).joinLeft // Right(SUCCESS)
+Right(right).joinRight // Right(right).joinRight</code></pre></div>   
+                </div>
+                <p class="ft-fragment">Hasznaljuk Option helyett, ha a hianyzo erteknek van domainen beluli reprezentacioja</p>
+            </div>  
+            
+            
+            <div class="ft-section" data-id="section-6">
+                <div id="/section-6/page-1" class="ft-page" data-id="page-1">
+                    <h1>Try</h1>
+                    <p class="ft-fragment">Monad</p>
+                    <p class="ft-fragment">Szamitasok sikeressegenek reprezentalasara</p>
+                    <div class="ft-fragment"><p>Implementacio</p><pre><code class="scala">sealed abstract class Try[+T]</code></pre></div>
+                    <p class="ft-fragment">Ket altipus: Success es Failure</p>
+                    <p class="ft-fragment">Tryt nem tudunk letrehozni, csak Successt es Failuret</p>
+                    <p class="ft-fragment">Try.apply-on beluli kivetelek Failure-re valnak</p>
+                    <p class="ft-fragment">Kivetelkezeles helyett, ez funkcionalis es RT</p>
+                </div>        
+                <div id="/section-5/page-2" class="ft-page" data-id="page-2">        
+                    <h1>Try</h1>
+                     <div class="ft-fragment"><pre><code class="scala">val test: Boolean = true
+val res: Try[Int] = Try {
+    if(test) 3
+    else throw new IllegalArgumentException
+}
+res.isFailure
+res.isSuccess
+
+res.map { _ * 2 } // T: Success(6) F: Failure(IAE)
+res.flatMap{ Try { ... } } // A ket Try metszete
+res.getOrElse(4) // T: 3 F: 4
+
+res match {
+    case Success(v) => println(s"Successful computation: $v")
+    case Failure(ex) => println(s"Unuccessful computation: $ex")  
+}
+
+res.toEither // T: Right(3) F: Left(IAE)
+res.toOption // T: Some(3) F: None</code></pre></div>   
+                <p class="ft-fragment">Specialis esete (es kevereke) az Optionnek es az Eithernek</p>
+                <p class="ft-fragment">Nagyon jol kifejezi a szamitas eredmenyesseget</p>
+                <p class="ft-fragment">Idiomatiks Scala kod exception helyett ezt hasznalja</p>
+            </div>     
+            </div>
+                    
+                        
+                <div class="ft-section" data-id="section-7">
+                    <div id="/section-7/page-1" class="ft-page" data-id="page-1">
+                        <h1>Future</h1>
+                        <p class="ft-fragment">Async programozas alapkove</p>
+                        <p class="ft-fragment">Egy szamitas eredmenyet reprezentalja, ami lehetseges, hogy most epp konkurensen fut</p>
+                        <p class="ft-fragment">Az eredeny lehet, hogy elerheto most, de a jovoben valamikor biztosan az lesz</p>
+                        <p class="ft-fragment">Monad</p>
+                        <p class="ft-fragment">A Javas CompletableFuture kozelebb all hozza, mint a Future</p>
+                        <div class="ft-fragment"><pre><code>def apply[T](body: =>T)(implicit executor: ExecutionContext): Future[T]</pre></code></div>
+                    </div>
+                    
+                    <div id="/section-7/page-2" class="ft-page" data-id="page-1">
+                        <h1>Future</h1>
+                        <div class="ft-fragment"><pre><code class="scala">// Global work-stealing thread pool, de persze lehet sajatunk is
+import scala.concurrent.ExecutionContext.Implicits.global
+
+val f: Future[Int] = Future {
+    Thread.sleep(5000) // Komplex szamitas
+    3
+}
+
+f.value // Option[Try[Int]] - aktualis ertek, lehet hogy meg hianyzik
+Await.ready(f, Duration.Inf) // Blokkolj Awaitable-on keresztul max Durationnyi idot
+// f.result es f.ready - csak Awaiten keresztul!
+
+f.onComplete{ // A lambda is konkurensen fut egy executoron - nincs ordering garancia!
+    case Success(v) => println(v)
+    case Failure(ex) => println(ex)
+}
+f.flatMap{v => Future { v * 3 }} // Future[Int]
+
+f.andThen{ // Side-effect generalasa, de a Future eredmenyen nem valtoztat. Ordering = andThen-ek sorrendje
+    case Success(v) => println(v)
+    case Failure(ex) => println(ex)
+}</code></pre></div>
+                    </div>
+                </div>
+                
+                <div class="ft-section" data-id="section-8">
+                    <div id="/section-7/page-1" class="ft-page" data-id="page-1">
+                        <h1>Egyeb</h1>
+                        <p class="ft-fragment"><code class="scala">scala.annotation</code>: annotacik kezelese + standard annotaciok (pl. <code class="scala">@tailrec</code>)</p>
+                        <p class="ft-fragment"><code class="scala">scala.collection.concurrent</code>: konkurens collectionok/dekoratorok</p>
+                        <p class="ft-fragment"><code class="scala">scala.io</code>: egyszeruen hasznalhato file es egyeb I/O</p>
+                        <p class="ft-fragment"><code class="scala">scala.jdk</code>: JDK standard osztaly konverterek</p>
+                        <p class="ft-fragment"><code class="scala">scala.math</code>: alapveto matematikai osztalyok es szamitasok, pl. <code class="scala">BigDecimal</code></p>
+                        <p class="ft-fragment"><code class="scala">scala.ref</code>: weak es soft referenciak</p>
+                        <p class="ft-fragment"><code class="scala">scala.reflect</code>: reflectionhoz tipusok</p>
+                        <p class="ft-fragment"><code class="scala">scala.sys</code>: process es JVM kornyezet kezelese</p>
+                        <p class="ft-fragment"><code class="scala">scala.util</code>: Try, Either es egyeb utilityk</p>
+                    </div>
+                    
+                    
+                    </div>
+                    
+                </div>
+        
+        </div>
+                
+
+<!-- 	<a href="https://github.com/marcolago/flowtime.js"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a> -->
+
+	<script src="../../infra/js/brav1toolbox.js"></script>
+	<script src="../../infra/js/flowtime.js"></script>
+	<!-- <script src="js/flowtime.min.js"></script> -->
+	<script src="../../infra/assets/js/prism.js"></script>
+
+	<script type="text/javascript">
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1228618-10']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.backFromPageToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		// Flowtime.parallaxInPx(true);
+		//
+		// event management
+		// Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		Flowtime.onNavigation(onNavigation);
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+</body>
+</html>
