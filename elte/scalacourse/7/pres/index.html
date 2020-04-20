@@ -1,0 +1,444 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0 minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="marcolago">
+
+	<meta property="og:title" content="Flowtime.js A HTML Presentation Framework">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta property="og:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta property="og:site_name" content="Programfejlesztes Scalaban">
+	<meta property="fb:admins" content="1293500397">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta name="twitter:title" content="Flowtime.js - A HTML Presentation Framework">
+	<meta name="twitter:description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+	<meta name="twitter:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta name="twitter:creator" content="@marcolago">
+
+	<meta name="description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+
+	<title>Flowtime.js</title>
+	<link rel="stylesheet" href="../../infra/assets/css/reset.css">
+	<link rel="stylesheet" href="../../infra/css/flowtime.css">
+	<link rel="stylesheet" href="../../infra/css/themes/default.css">
+	<link rel="stylesheet" href="../../infra/assets/css/prism.css">
+
+
+	<link rel="apple-touch-icon-precomposed" 						href="../../infra/img/touch-icon-iphone.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="72x72" 		href="../../infra/img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="114x114" 	href="../../infra/img/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="144x144" 	href="../../infra/img/touch-icon-ipad-retina.png">
+
+	<link rel="apple-touch-startup-image" href="../../infra/img/startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="../../infra/img/startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="stylesheet" href="../../infra/highlight/styles/default.css">
+        <script src="../../infra/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body class="">
+
+	<div class="flowtime">
+		<div class="ft-section" data-id="section-1">
+			<div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="Options: An introduction">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<p class="page-title">Programfejlesztes Scalaban</p>
+						<p class="page-title">Akka aktorok</p>
+						<img src="../../infra/img/scala_logo.png">
+					</div>
+				</div>
+			</div>
+			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
+                            <h1>Mai temak</h1>
+                            <p class="ft-fragment">Problemak a klasszikus konkurenciaval</p>
+                            <p class="ft-fragment">Aktormodel</p>
+                            <p class="ft-fragment">Aktorok cimzese</p>
+                            <p class="ft-fragment">Aktor interkaciok</p>
+                            <p class="ft-fragment">Router</p>
+                            <p class="ft-fragment">Logging</p>
+			</div>
+                </div>
+		<div class="ft-section" data-id="section-2">
+			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
+                            <h1>Problemak a klasszikus konkurenciaval</h1>
+                            <p class="ft-fragment">Szalak egy processen belul</p>
+                            <p class="ft-fragment">Szalak kozott megosztott memoria</p>
+                            <p class="ft-fragment">Tobb szal irja es olvassa ugyanazt a memoriateruletet</p>
+                            <p class="ft-fragment">Szukseg van a kolcsonos kizarasra</p>
+                            <p class="ft-fragment">Monitorok, lockok, volatile valtozok</p>
+                            <p class="ft-fragment">Queuek, threadpoolok, executorok, Future-ok, aszinkron varakozas</p>
+                            <p class="ft-fragment">Kivetelkezeles vs nincs egy stack</p>
+                            <p class="ft-fragment">Erveles a helyesseg mellett nehez</p>
+                            <p class="ft-fragment">Deadlock, livelock, nemdeterminisztikussag</p>
+                            <p class="ft-fragment">Debuggolhatosag</p>
+                        </div>
+                        
+                        <div id="/section-2/page-1" class="ft-page" data-id="page-1">
+                            <h1>Problemak a klasszikus konkurenciaval</h1>
+                            <p class="ft-fragment">Enkapszulacio: belso allapot threadek kozott nincs korlatozva</p>
+                            <p class="ft-fragment">Lockok jelentosen nehezitik a skalazast</p>
+                            <p class="ft-fragment">Tobbmagos CPU-k: nincs is megosztott memoria</p>
+                            <p class="ft-fragment">Cacheline-ok masolgatasa magok kozott</p>
+                            <p class="ft-fragment">Rejtett uzenetkuldes</p>
+                            <p class="ft-fragment">Skalazas kettebomlik: hoston belul vs tobb hoston</p>
+                        </div>  
+                    </div>
+                    
+                    <div class="ft-section" data-id="section-3">
+                        <div id="/section-3/page-1" class="ft-page" data-id="page-1">
+                            <h1>Aktormodel</h1>
+                            <p class="ft-fragment">1973-ban jelent meg</p>
+                            <p class="ft-fragment">Megprobal valaszt adni az elobbi problemakra</p>
+                            <p class="ft-fragment">Elso jelentos modern implementacio: Erlang</p>
+                            <p class="ft-fragment">Aktor: izolalt egyseg</p>
+                            <p class="ft-fragment">Nincs kozos memoria</p>
+                            <p class="ft-fragment">Explicit uzenetkuldessel kommunikalnak</p>
+                            <p class="ft-fragment">Hierarchiaba szervezhetoek</p>
+                            <p class="ft-fragment">Implementacio elrejti a kommunikacio formajat</p>
+                            <p class="ft-fragment">Tobb szal/tobb process/tobb host</p>
+                        </div>
+                </div>
+                    
+            <div class="ft-section" data-id="section-4">
+                <div id="/section-4/page-1" class="ft-page" data-id="page-1">
+                    <h1>Scala aktorok</h1>
+                    <p class="ft-fragment">2.8-ban a Std Lib resze: <code class="scala">scala.actors._</code></p>
+                    <p class="ft-fragment">Deprekaltak => Akka Actors</p>
+                    <p class="ft-fragment">Akka: klasszikus vs uj aktor API</p>
+                    <p class="ft-fragment">Klasszikus: tipustalan, uj: tipushelyes</p>
+                    <p class="ft-fragment">Compiler sok hibat megfog</p>
+                    <div class="ft-fragment"><pre><code class="xml">&lt;dependency&gt;
+    &lt;groupId&gt;com.typesafe.akka&lt;/groupId&gt;
+    &lt;artifactId&gt;akka-actor-typed_2.12&lt;/artifactId&gt;
+    &lt;version&gt;2.6.4&lt;/version&gt;
+&lt;/dependency&gt;</code></pre></div>
+                </div>
+                
+                <div id="/section-4/page-2" class="ft-page" data-id="page-2">
+                    <h1>Actorsystem</h1>
+                    <p class="ft-fragment">Egy alkalmazast leiro, es az abban letezo aktorok osszefogo rendszere</p>
+                    <p class="ft-fragment">Aktorok konfiguracios kontenere</p>
+                    <p class="ft-fragment">Egy root aktor</p>
+                    <p class="ft-fragment">Leallitas: <code class="scala">CoordinatedShutdown</code></p>
+                </div>
+                <div id="/section-4/page-4" class="ft-page" data-id="page-4">
+                    <h1>Aktorok best practices</h1>
+                    <p class="ft-fragment">Az aktorok egy feladatot lassanak el, anelkul hogy masik aktorokat feleslegesen zaklatnanak</p>
+                    <p class="ft-fragment">Az aktorok lehetoleg ne blokkoljanak</p>
+                    <p class="ft-fragment">Az uzenetek legyenek immutable-ok</p>
+                    <p class="ft-fragment">Az uzenetek csak adatot tartalmazzanak, viselkedest ne</p>
+                    <p class="ft-fragment">Aktor path: a hierarchiaban a felugyeleti utvonal</p>
+                    <p class="ft-fragment">A legfelso szinten levo aktorok csak a koordniacioert legyenek felelosek</p>
+                </div>
+                <div id="/section-4/page-4" class="ft-page" data-id="page-4">
+                    <h1>Egy egyszeru pelda</h1>
+                    <div class="ft-fragment"><pre><code class="scala">import akka.actor.typed.scaladsl.Behaviors
+import akka.actor.typed.scaladsl.LoggerOps
+import akka.actor.typed.{ ActorRef, ActorSystem, Behavior }
+
+object HelloWorld {
+  final case class Greet(whom: String, replyTo: ActorRef[Greeted])
+  final case class Greeted(whom: String, from: ActorRef[Greet])
+
+  def apply(): Behavior[Greet] = Behaviors.receive { (context, message) =>
+    println(s"Hello ${message.whom}!")
+    message.replyTo ! Greeted(message.whom, context.self)
+    Behaviors.same
+  }
+}
+
+object HelloWorldBot {
+  def apply(max: Int): Behavior[HelloWorld.Greeted] = bot(0, max)
+
+  private def bot(greetingCounter: Int, max: Int): Behavior[HelloWorld.Greeted] =
+    Behaviors.receive { (context, message) =>
+      val n = greetingCounter + 1
+      if (n == max) Behaviors.stopped // Ha elertuk a max udvozlest, alljunk le
+      else {
+        message.from ! HelloWorld.Greet(message.whom, context.self)
+        bot(n, max)
+      }
+    }
+}
+// A programunk mainje es az aktor egyben
+object HelloWorldMain {
+  final case class SayHello(name: String)
+
+  def apply(): Behavior[SayHello] =
+    Behaviors.setup { context =>
+      val greeter = context.spawn(HelloWorld(), "greeter")
+
+      Behaviors.receiveMessage { message =>
+        val replyTo = context.spawn(HelloWorldBot(max = 3), message.name)
+        greeter ! HelloWorld.Greet(message.name, replyTo)
+        Behaviors.same // Maradunk ebben az allapotban
+      }
+    }
+
+  def main(args: Array[String]): Unit = {
+    val system: ActorSystem[HelloWorldMain.SayHello] = ActorSystem(HelloWorldMain(), "hello")
+
+    system ! HelloWorldMain.SayHello("World")
+    system ! HelloWorldMain.SayHello("Actor")
+  }
+}</code></pre></div>
+                </div>
+            </div>
+                    
+                
+            <div class="ft-section" data-id="section-5">
+                <div id="/section-5/page-1" class="ft-page" data-id="page-3">
+                    <h1>Aktorok cimzese</h1>
+                    <p class="ft-fragment">Aktorreferencia: <code class="scala">ActorRef[_]</code>: lehet lokalis, remote, stb.</p>
+                    <p class="ft-fragment"><code class="scala">ActorRef[_]</code> elsodleges celja, hogy uzenetet tudjunk kuldeni az aktornak</p>
+                    <p class="ft-fragment"><code class="scala">ActorRef[_]</code> eletciklusa = az aktor eletciklusa</p>
+                    <p class="ft-fragment">Aktor path: a hierarchiaban a felugyeleti utvonal</p>
+                    <p class="ft-fragment"><code class="scala">"akka://my-actorsystem/user/service-a/worker1"</code></p>
+                    <p class="ft-fragment">Aktor path nincs kotve az epp aktualis aktor eletciklusahoz</p>
+                    <p class="ft-fragment"><code class="scala">ActorRef[_]</code>-et egy child aktor letrehozasakor vagy uzenetben is kaphatunk</p>
+                </div>
+                <div id="/section-5/page-1" class="ft-page" data-id="page-3">
+                    <h1>Receptionist</h1>
+                    <p class="ft-fragment">Egy registry, amibe aktorokat regisztralunk</p>
+                    <p class="ft-fragment">Lokalis, amit az Akka disztributal az osszes aktorhoz az adott ActorSystemen belul</p>
+                    <p class="ft-fragment">Jellemzoen bootstrapeleshez hasznaljuk</p>
+                    <p class="ft-fragment">A Receptionist is egy aktor</p>
+                    <p class="ft-fragment">Event-driven: <code class="scala">Receptionist.Subscribe</code> uzenet</p>
+                    <div class="ft-fragment"><pre><code class="scala">val pingServiceKey = ServiceKey[Ping]("pingService")
+context.system.receptionist ! Receptionist.Register(pingServiceKey, context.self)</code></pre></div>  
+                    <p class="ft-fragment">~10k aktorig skalazodik, felette szukseges sajat megoldas</p>
+                </div>
+            </div>  
+            
+            
+            <div class="ft-section" data-id="section-6">
+                <div id="/section-6/page-1" class="ft-page" data-id="page-1">
+                    <h1>Aktor interkaciok</h1>
+                    <p class="ft-fragment">Fire and forget</p>
+                    <p class="ft-fragment">Request-response</p>
+                    <p class="ft-fragment">Adapted response</p>
+                    <p class="ft-fragment">Ask</p>
+                    <p class="ft-fragment">Future kuldese magunknak</p>
+                </div>      
+                <div id="/section-6/page-2" class="ft-page" data-id="page-2">
+                    <h1>Fire and forget</h1>
+                    <p class="ft-fragment">Elkuldunk egy uzenetet egy aktornak, de nem vagyunk kivancsiak a (vagy nincs is) valaszra</p>
+                    <p class="ft-fragment">Jellemzoen command-tipusu aktorok</p>
+<div class="ft-fragment"><pre><code class="scala">object Printer {
+  case class PrintMe(message: String)
+
+  def apply(): Behavior[PrintMe] =
+    Behaviors.receive {
+      case (context, PrintMe(message)) =>
+        context.log.info(message)
+        Behaviors.same
+    }
+}
+
+val system = ActorSystem(Printer(), "faf")
+val printer: ActorRef[Printer.PrintMe] = system // az ActorSystem == a legfelso ActorRef
+printer ! Printer.PrintMe("message")</code></pre></div>
+                </div>
+                <div id="/section-6/page-3" class="ft-page" data-id="page-3">
+                    <h1>Request-response</h1>
+                    <p class="ft-fragment">Elkuldunk egy uzenetet egy aktornak, az vegrehajt valami feldolgozast, es keszit egy valaszt</p>
+                    <div class="ft-fragment"><pre><code class="scala">case class Request(query: String, replyTo: ActorRef[Response])
+case class Response(result: String)
+
+Object ActorServer {
+    def apply(): Behaviors.Receive[Request] =
+    Behaviors.receiveMessage[Request] {
+        case Request(query, replyTo) =>
+        replyTo ! Response(s"Results")
+        Behaviors.same
+    }
+}
+
+aktorServer ! Request("query", context.self)</code></pre></div>
+                </div>
+                <div id="/section-6/page-4" class="ft-page" data-id="page-4">
+                    <h1>Adapted response</h1>
+                    <p class="ft-fragment">Tul szoros coupling lesz, ha a request kuldoje direktben ismeri es reagal a response-okra</p>
+                    <p class="ft-fragment">Kozbeiktathatunk egy aktort, ami konvertalja ezeket</p>
+                    <p class="ft-fragment"><code class="scala">MessageAdapter</code></p>
+<div class="ft-fragment"><pre><code class="scala">Behaviors.setup[Command] { context =>
+    val backendResponseMapper: ActorRef[Backend.Response] =
+    context.messageAdapter(rsp => WrappedBackendResponse(rsp))
+    ...
+}</code></pre></div>
+                <p class="ft-fragment">Altalaban a setupban regisztraljuk</p>
+                <p class="ft-fragment">Uzenettipusonket csak egy van, hogy ha ujraregisztraljuk, ne lehessen vegtelen</p>
+            </div>
+            <div id="/section-6/page-5" class="ft-page" data-id="page-5">
+                    <h1>Ask</h1>
+                    <p class="ft-fragment">Kerdes, amire valaszt varunk igy vagy ugy (siker/hiba)</p>
+                    <p class="ft-fragment">A requestor tudja, hogy feldolgoztak a kereset</p>
+                    <p class="ft-fragment">Zaros hataridon belul (=timeout)</p>
+                    <div class="ft-fragment"><pre><code class="scala">object Server {
+  sealed trait Command
+  case class Request(replyTo: ActorRef[Response]) extends Command
+  case class Response(message: String)
+
+  def apply(): Behaviors.Receive[Hal.Command] =
+    Behaviors.receiveMessage[Command] {
+      case Request(replyTo) => replyTo ! Response("Result"); Behaviors.same
+    }
+}
+
+object Client {
+  sealed trait Command
+  private case class AdaptedResponse(message: String) extends Command // A kliens belso reprezentacioja
+
+  def apply(server: ActorRef[Server.Command]): Behavior[Client.Command] =
+    Behaviors.setup[Command] { context =>
+      implicit val timeout: Timeout = 3.seconds
+
+      // Hasznalhatjuk az uzenet kontextusat is, de jo, ha immutable ertekekkel dolgozunk
+      context.ask(server, Server.Request) {
+        case Success(Server.Response(message)) => AdaptedResponse(message)
+        case Failure(_)                        => AdaptedResponse("Request failed")
+      }
+
+      Behaviors.receiveMessage {
+        case AdaptedResponse(message) => context.log.info("Got response from server: {}", message); Behaviors.same
+      }
+    }
+}</code></pre></div>
+            </div>
+            <div id="/section-6/page-6" class="ft-page" data-id="page-6">
+                    <h1>Future kuldese magunknak</h1>
+                    <p class="ft-fragment">Ne hasznaljunk low-level konkurenciat az aktoron belul</p>
+                    <p class="ft-fragment">Hosszu hivas neha elkerulhetetlen</p>
+                    <p class="ft-fragment">Hasznaljuk az aktorinfrastrukturat!</p>
+<div class="ft-fragment"><pre><code class="scala">trait CustomerDataAccess {
+    def update(value: Customer): Future[Done]
+}
+
+Behaviors.receive { (context, command) =>
+      command match {
+        case Update(value, replyTo) =>
+            val futureResult = dataAccess.update(value)
+            // Ezeket az uzeneteket az aktorunk kezeli
+            context.pipeToSelf(futureResult) {
+                case Success(_) => WrappedUpdateResult(UpdateSuccess(value.id), replyTo)
+                case Failure(e) => WrappedUpdateResult(UpdateFailure(value.id, e.getMessage), replyTo)
+            }
+    }
+}
+</code></pre></div>
+            </div>
+        </div>
+                <div class="ft-section" data-id="section-7">
+                    <div id="/section-7/page-1" class="ft-page" data-id="page-1">
+                        <h1>Router</h1>
+                        <p class="ft-fragment">Egy aktor, ami uzeneteket tovabbit</p>
+                        <p class="ft-fragment">Konnyu paralellizalas</p>
+                        <p class="ft-fragment">Pool router: egy meghatarozott szamu aktornak tovabbit uzeneteket, ujrahasznalva oket</p>
+                        <p class="ft-fragment">Group router: <code class="scala">ServiceKey</code> alapjan valaszt</p>
+                        <p class="ft-fragment">Routing strategiak: round robin, random, hash-alapu</p>
+                        <p class="ft-fragment">Egy router leall, ha az osszes aktora leallt</p>
+                    </div>
+                    
+                    <div id="/section-7/page-2" class="ft-page" data-id="page-1">
+                        <h1>Pool Router</h1>
+                        <div class="ft-fragment"><pre><code class="scala">// Setup
+val pool = Routers.pool(poolSize = 4){
+    // Ujrainditjuk a workereket, ha leallnanak
+    Behaviors.supervise(Worker()).onFailure[Exception](SupervisorStrategy.restart)
+}
+
+// Inditas
+val router = ctx.spawn(pool, "worker-pool")
+
+// Hasznalat
+(0 to 10).foreach { n =>
+    router ! Worker.DoLog(s"msg $n")
+}</code></pre></div>
+                        <p class="ft-fragment">Ez egy aktoralapu <code class="scala">ExecutorService</code>, csak sokkal tobbet is tudhat</p>
+                    </div>
+                </div>
+                
+                <div class="ft-section" data-id="section-8">
+                    <div id="/section-8/page-1" class="ft-page" data-id="page-1">
+                        <h1>Logging</h1>
+                        <p class="ft-fragment">SLF4J logger beepitve az Akkaba</p>
+                        <p class="ft-fragment">Az <code class="scala">ActorContext</code> egy aktorspecifikus <code class="scala">org.slf4j.Logger</code>-hoz ad hozzaferest</p>
+                        <p class="ft-fragment">Fontos, hogy async appendert hasznaljunk</p>
+                        <p class="ft-fragment">Az actor path automatikusan hozza lesz adva a loguzenethez</p>
+                        <div class="ft-fragment"><pre><code class="scala">context.log.debug("Received message: {}", message)</code></pre></div>
+                        <p class="ft-fragment">Maga a logger thread-safe, de a <code class="scala">context.log</code> nem</p>
+                        <div class="ft-fragment"><p>Az osszes uzenet loggolasa</p><pre><code class="scala">Behaviors.logMessages(LogOptions().withLevel(Level.TRACE), BackendManager())</code></div>
+                    </div>    
+                </div>
+                <div class="ft-section" data-id="section-9">
+                    <div id="/section-9/page-1" class="ft-page" data-id="page-1">
+                        <h1>Feladatok</h1>
+                        <p class="ft-fragment">1. Keszitsunk egy broadcasting chat programot! A szerverhez csatlakoznak a kliensek, akik uzeneteket kuldhetnek (pl. readLine), amit a tobbi kliens megkap. Amikor egy kliens csatlakozik, akkor 
+                            megkapja es megjeleniti a historyt.</p>
+                        <p class="ft-fragment">2. Szamoljuk meg egy file-ban, hogy hanyszor szerepelnek a karakterek! A szamitas legyen parhuzamos. A filet az aktorok elerhetik. Javasolt modszer: divide&amp;conquer.</p>
+                    </div>    
+                </div>    
+            </div>
+        
+        </div>
+                
+
+<!-- 	<a href="https://github.com/marcolago/flowtime.js"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a> -->
+
+	<script src="../../infra/js/brav1toolbox.js"></script>
+	<script src="../../infra/js/flowtime.js"></script>
+	<!-- <script src="js/flowtime.min.js"></script> -->
+	<script src="../../infra/assets/js/prism.js"></script>
+
+	<script type="text/javascript">
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1228618-10']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.backFromPageToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		// Flowtime.parallaxInPx(true);
+		//
+		// event management
+		// Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		Flowtime.onNavigation(onNavigation);
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+</body>
+</html>
