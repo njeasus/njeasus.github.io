@@ -1,0 +1,455 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0 minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="marcolago">
+
+	<meta property="og:title" content="Flowtime.js A HTML Presentation Framework">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta property="og:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta property="og:site_name" content="Programfejlesztes Scalaban">
+	<meta property="fb:admins" content="1293500397">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta name="twitter:title" content="Flowtime.js - A HTML Presentation Framework">
+	<meta name="twitter:description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+	<meta name="twitter:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta name="twitter:creator" content="@marcolago">
+
+	<meta name="description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+
+	<title>Flowtime.js</title>
+	<link rel="stylesheet" href="../../infra/assets/css/reset.css">
+	<link rel="stylesheet" href="../../infra/css/flowtime.css">
+	<link rel="stylesheet" href="../../infra/css/themes/default.css">
+	<link rel="stylesheet" href="../../infra/assets/css/prism.css">
+
+
+	<link rel="apple-touch-icon-precomposed" 						href="../../infra/img/touch-icon-iphone.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="72x72" 		href="../../infra/img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="114x114" 	href="../../infra/img/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="144x144" 	href="../../infra/img/touch-icon-ipad-retina.png">
+
+	<link rel="apple-touch-startup-image" href="../../infra/img/startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="../../infra/img/startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="stylesheet" href="../../infra/highlight/styles/default.css">
+        <script src="../../infra/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body class="">
+
+	<div class="flowtime">
+		<div class="ft-section" data-id="section-1">
+			<div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="Options: An introduction">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<p class="page-title">Programfejlesztes Scalaban</p>
+						<p class="page-title">Generativ programozas</p>
+						<img src="../../infra/img/scala_logo.png">
+					</div>
+				</div>
+			</div>
+			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
+                            <h1>Mai temak</h1>
+                            <p class="ft-fragment">Scalac</p>
+                            <p class="ft-fragment">Makrok</p>
+                            <p class="ft-fragment">Compiler pluginek</p>
+                            <p class="ft-fragment">Compiler infrastruktura</p>
+			</div>
+                </div>
+		<div class="ft-section" data-id="section-2">
+			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
+                            <h1>Scalac</h1>
+                            <p class="ft-fragment">Tobbfazisu compiler (de csak egymenetes)</p>
+                            <p class="ft-fragment">Parse-olas utan egy AST-t epit</p>
+                            <div class="ft-fragment"><p>AST: Abstract Syntax Tree</p><img src="ast.jpg"/></div>
+                            <p class="ft-fragment">A fazisok az AST-t vizsgaljak es transzformaljak</p>
+                            <p class="ft-fragment">Maga a compiler es az AST is Scala kod es std lib-et hasznal</p>
+                            <p class="ft-fragment">Elonyok: ismeros, konnyen modosithato</p>
+                            <p class="ft-fragment">Hatranyok: nem trivialis reprezentacio, lehetne gyorsabb is</p>
+                        </div>
+                        <div id="/section-2/page-2" class="ft-page" data-id="page-2">
+                            <h1>Scala AST tipushierarchia</h1>
+                            <div class="ft-fragment"><img src="scala_ast.png"/></div>
+                        </div>
+                        <div id="/section-2/page-1" class="ft-page" data-id="page-1">
+                            <h1>Compiler fazisok</h1>
+                            <p class="ft-fragment"><code class="scala">scalac -Xshow-phases</code></p>
+<div class="ft-fragment"><pre><code class="xml">    phase name  id  description
+    ----------  --  -----------
+        parser   1  parse source into ASTs, perform simple desugaring
+         namer   2  resolve names, attach symbols to named trees
+packageobjects   3  load package objects
+         typer   4  the meat and potatoes: type the trees
+        patmat   5  translate match expressions
+superaccessors   6  add super accessors in traits and nested classes
+    extmethods   7  add extension methods for inline classes
+       pickler   8  serialize symbol tables
+     refchecks   9  reference/override checking, translate nested objects
+       uncurry  10  uncurry, translate function values to anonymous classes
+        fields  11  synthesize accessors and fields, add bitmaps for lazy vals
+     tailcalls  12  replace tail calls by jumps
+    specialize  13  @specialized-driven class and method specialization
+ explicitouter  14  this refs to outer pointers
+       erasure  15  erase types, add interfaces for traits
+   posterasure  16  clean up erased inline classes
+    lambdalift  17  move nested functions to top level
+  constructors  18  move field definitions into constructors
+       flatten  19  eliminate inner classes
+         mixin  20  mixin composition
+       cleanup  21  platform-specific cleanups, generate reflective calls
+    delambdafy  22  remove lambdas
+           jvm  23  generate JVM bytecode
+      terminal  24  the last phase during a compilation run</code></pre></div>
+                        </div>  
+                    </div>
+                    
+                    <div class="ft-section" data-id="section-3">
+                        <div id="/section-3/page-1" class="ft-page" data-id="page-1">
+                            <h1>Makrok</h1>
+                            <p class="ft-fragment">A makrok a Scala metaprogramozas legyegyszerubb eszkozei</p>
+                            <p class="ft-fragment">Scala kod, ami forditasi idoben Scala kodot general</p>
+                            <p class="ft-fragment">Nem keverendo ossze a C preprocesszor makrokkal (=egyszeru szoveghelyettesites)</p>
+                            <p class="ft-fragment">A makro AST-bol AST-t keszit</p>
+                            <p class="ft-fragment">Megkapja a compiler aktualis allapotat</p>
+                            <p class="ft-fragment">Amikor a typer egy makro hivast talal, lefuttatja a makro kodjat</p>
+                            <p class="ft-fragment">A makro altal generalt AST-t a hivas pontos helyere illeszti</p>
+                            <p class="ft-fragment">Majd lefuttatja az uj AST-re is a typert</p>
+                            <p class="ft-fragment">Megszoritas: tipushelyes AST-t kell generalnunk</p>
+                            <p class="ft-fragment">A kimeno AST lehet ugyanaz, mint a bemeno: vegezhetunk ellenorzeseket is csupan</p>
+                            <p class="ft-fragment">A makro definicioja es a felhaszanalasa lehet ugyanabban a forditasi egysegben</p>
+                        </div>
+                        <div id="/section-3/page-2" class="ft-page" data-id="page-2">
+                            <h1>Makro pelda</h1>
+                            <div class="ft-fragment"><pre><code class="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.scala-lang&lt;/groupId&gt;
+    &lt;artifactId&gt;scala-reflect&lt;/artifactId&gt;
+    &lt;version&gt;2.12.4&lt;/version&gt;
+&lt;/dependency&gt;</code></pre></div>
+                            <div class="ft-fragment"><pre><code class="scala">import scala.reflect.macros.blackbox
+
+object Macros {
+    // A macro kulcsszo hasznalata jelzi a compilernek: itt trukkozunk 
+    def hello: Unit = macro helloImpl
+
+    // A macro implementacioja mindig kulon van definialva
+    // A c itt a compiler context
+    // A generalt AST most Unit tipusu
+    def helloImpl(c: blackbox.Context): c.Expr[Unit] = {
+        // A context path-dependent dolgai
+        import c.universe._
+        // A q""" egy quasiquote - ezekrol kesobb
+        c.Expr(q"""println("hello!")""")
+    }
+}</code></pre></div>
+                                <div class="ft-fragment"><pre><code class="scala">import Macros.hello
+def usingMyMacro(): {
+    ...
+    hello // Ez a szimbolum lesz attranszformalva
+    ...
+}</code></pre></div>
+                        </div>
+                        <div id="/section-3/page-3" class="ft-page" data-id="page-3">
+                            <h1>Makrok fajtai</h1>
+                            <p class="ft-fragment">A makrok altal generalt AST korabban megorizte a visszateresi tipust statikusan</p>
+                            <p class="ft-fragment">Ez igy nem biztos, hogy jo: specifikusabb tipussal terunk vissza, es az "ugy is marad", tehat nem elvart</p>
+                            <p class="ft-fragment">Blackbox vs whitebox makrok</p>
+                            <p class="ft-fragment">Blackbox: pont ugy viselkedik, mint egy sima def: a visszateresi tipusu AST-vel ter vissza</p>
+                            <p class="ft-fragment">A mukodesuk megertesehez nincs szukseg az implementaciora</p>
+                            <p class="ft-fragment">Whitebox: nincs feltetlenul pontos szignaturajuk Scalaban</p>
+                            <p class="ft-fragment">Ez hogyan fordulhat elo? Pl. conditional types</p>
+                            <p class="ft-fragment">Ez a korabbi mukodes: nincs megkotes a visszateresi tipusra</p>
+                            <p class="ft-fragment">Mindketto fontos lehet, de: blackbox trivialisabb, konnyebben irhato, ertheto, tamogathato</p>
+                        </div>
+                        <div id="/section-3/page-4" class="ft-page" data-id="page-4">
+                            <h1>AST generalasa</h1>
+                            <p class="ft-fragment">Kezzel: letrehozzuk a fat a megfelelo tipusok alkalmazasasaval</p>
+                            <div class="ft-fragment"><pre><code class="scala">c.Expr {
+  Apply(
+    Ident(TermName("println")),
+    List(
+      Apply(
+        Select(
+          Apply(
+            Select(
+              Literal(Constant("hello ")),
+              TermName("$plus")
+            ),
+            List(
+              s.tree
+            )
+          ),
+          TermName("$plus")
+        ),
+        List(
+          Literal(Constant("!"))
+        )
+      )
+    )
+  )
+}</code></pre></div>
+                            <p class="ft-fragment">Keves embernek esik ez jol</p>
+                        </div>
+                        
+                        <div id="/section-3/page-5" class="ft-page" data-id="page-5">
+                            <h1>AST generalasa</h1>
+                            <p class="ft-fragment">Quasiquote-ok</p>
+                            <p class="ft-fragment">Van valami infrastrukturank, amit tud szovegbol AST-t kesziteni: a parser!</p>
+                            <p class="ft-fragment">Ha mar van, hasznaljuk</p>
+                            <div class="ft-fragment"><pre><code class="scala">// Ez ugyanaz az AST lesz, mint az elozo dian
+q"""println("hello " + ${s.tree} + "!")"""
+</code></pre></div>
+                            <div class="ft-fragment"><p>A tree reprezentacio kiirasa</p><pre><code class="scala">showRaw(q"""println("hello " + ${s.tree} + "!")""")</code></pre></div>
+                        </div>
+                        <div id="/section-3/page-6" class="ft-page" data-id="page-6">
+                            <h1>AST generalasa</h1>
+                            <p class="ft-fragment">Reify es splice</p>
+                            <p class="ft-fragment">Ez is egy makro; jon a compilerrel</p>
+                            <p class="ft-fragment">reify: kodblokk -> AST</p>
+                            <p class="ft-fragment">splice: AST -> kodblokk (csak reify blokkon belul mukodik)</p>
+                            <div class="ft-fragment"><pre><code class="scala">// Ez ugyanaz az AST lesz, mint az elozo diakon
+reify {
+  println(s"hello ${s.splice}!")
+}
+</code></pre></div>
+                            <p class="ft-fragment">Itt valodi Scala kodot irunk (a makro forditasakor ellenorzi a compiler)</p>
+                            <p class="ft-fragment">Konnyebb helyes kodot irni, cserebe kenyelmetlenebb, mint a quasiquote</p>
+                        </div>
+                        <div id="/section-3/page-7" class="ft-page" data-id="page-7">
+                            <h1>Makro pelda parameterrel</h1>
+                            <div class="ft-fragment"><pre><code class="scala">import scala.reflect.macros.blackbox
+
+object Macros {
+    def hello(s: String): Unit = macro helloImpl
+
+    // A makronk masodik parameterlistaja az, ami "exposalva" van a hasznalatra
+    // A bejovo AST tipusa egy String tipusu kifejezes
+    // Ezt persze kiertekelni nem tudjuk itt - ahhoz a runtime minden informaciojara szukseg lenne
+    def helloImpl(c: blackbox.Context)(s: c.Expr[String]): c.Expr[Unit] = {
+        import c.universe._
+        c.Expr(q"""println("hello " + ${s.tree} + "!")""")
+    }
+}</code></pre></div>
+                                <div class="ft-fragment"><pre><code class="scala">import Macros.hello
+def usingMyMacro(): {
+    ...
+    hello("Scala") // Ez a szimbolum lesz attranszformalva
+    ...
+}</code></pre></div>
+                        </div>
+                        <div id="/section-3/page-7" class="ft-page" data-id="page-7">
+                            <h1>Makro bundle</h1>
+                            <p class="ft-fragment">Eddig mindig csak egyszeru def-eket hasznaltunk makrokent</p>
+                            <p class="ft-fragment">Trivialis esetkben jol mukodik</p>
+                            <p class="ft-fragment">Bonyolultabb helyzetben jo lenne tobb defet hasznalni</p>
+                            <p class="ft-fragment">Enkapszulacio, ujrafelhasznalas, stb.</p>
+                            <div class="ft-fragment"><pre><code class="scala">import scala.reflect.macros.blackbox.Context
+
+class Impl(val c: Context) {
+    def hello(s: c.Expr[String]): c.Expr[Unit] = {
+        import c.universe._
+        c.Expr(q"""println("hello " + ${s.tree} + "!")""")
+    }
+}
+
+object Macros {
+    def hello(s: String): Unit = macro Impl.helloImpl
+}</code></pre></div>
+                            <p class="ft-fragment">Makro bundle: egy osztaly, aminek az egyetlen konstruktora egy contextet fogad el</p>            
+                            <p class="ft-fragment">Ide tudjuk tenni a makro implementaciokat + az osszes utilityt, amire szuksegunk van</p>            
+                        </div>
+                        <div id="/section-3/page-7" class="ft-page" data-id="page-7">
+                            <h1>Generikus makrok</h1>
+                            <p class="ft-fragment">Egy makro lehet generikus</p>
+                            <p class="ft-fragment">Ebben az esetben az applikacio helyen kotelezo explicite megadni a tipusokat</p>
+                            <p class="ft-fragment">A pontos tipusinformacio megorzese erdekeben nem art <code class="scala">TypeTag</code>-et kerni a parameterekre (context bounds)</p>
+                            <p class="ft-fragment"><code class="scala">WeakTypeTag</code>: ez mindig a leheto legkonkretabb tipust fogja leirni</p>
+                            <div class="ft-fragment"><pre><code class="scala">class Queryable[T] {
+ def map[U](p: T => U): Queryable[U] = macro QImpl.map[T, U]
+}
+
+object QImpl {
+ def map[T: c.WeakTypeTag, U: c.WeakTypeTag]
+        (c: Context)
+        (p: c.Expr[T => U]): c.Expr[Queryable[U]] = ...
+}</code></pre></div>      
+                        </div>
+                        <div id="/section-3/page-8" class="ft-page" data-id="page-8">
+                            <h1>Makro praktikak</h1>
+                            <p class="ft-fragment"><code class="scala">-Ymacro-debug-lite</code>: kiirja a macro expansion helyet, eredmenyet nyers Tree-kent es pszeudo-Scala kodkent</p>
+                            <p class="ft-fragment">Nem kezelt exceptionok: stacktrace kiirasa, de ez nem tul elegans</p>
+                            <div class="ft-fragment"><p>Compiler kimenete hibak es figyelmeztetesek hasznalatara</p><pre><code class="scala">c.abort(c.enclosingPosition, "macro error")
+c.error(c.enclosingPosition, "macro compiler error")
+c.warning(c.enclosingPosition, "macro warning")</code></pre></div>          
+                        </div>
+                </div>
+                    
+            <div class="ft-section" data-id="section-4">
+                <div id="/section-4/page-1" class="ft-page" data-id="page-1">
+                    <h1>Compiler pluginek</h1>
+                    <p class="ft-fragment">A scalac lehetoseget ad sajat compiler phase irasara</p>
+                    <p class="ft-fragment">Barmelyik phase utan futtathatjuk a pluginunket (akar tobb utan is)</p>
+                    <p class="ft-fragment">Hasonlo a makrokhoz: AST -> AST, de sokkal heavyweightebb</p>
+                    <p class="ft-fragment">Implementalhatunk benne olyan dolgokat, amik makroban nem lehetsegesek</p>
+                    <p class="ft-fragment">Lehetnek opcioi, amit a compileren keresztul passzolunk at</p>
+                    <p class="ft-fragment">Kulon forditasi egyseg, mint a felhasznalasa: JAR-t kell kesziteni belole</p>
+                    <p class="ft-fragment">Osszetevok: plugin kod, plugin komponens (definialja, hogyan es mikor fut), opcionalis opciok, metaadat (XML)</p>
+                </div>
+                
+                <div id="/section-4/page-2" class="ft-page" data-id="page-2">
+                    <h1>Plugin es komponens kod</h1>
+                    <div class="ft-fragment"><pre><code class="scala">package elte.scalacourse
+
+import scala.tools.nsc
+import nsc.Global
+import nsc.Phase
+import nsc.plugins.Plugin
+import nsc.plugins.PluginComponent
+
+class DivByZero(val global: Global) extends Plugin {
+    // A global a compiler globalis allapota
+    import global._
+
+    // A pluginunk leirasa
+    val name = "divbyzero"
+    val description = "checks for division by zero"
+    val components = List[PluginComponent](Component)
+
+    // A komponens object
+    private object Component extends PluginComponent {
+        // A global kiemelese valla
+        val global: DivByZero.this.global.type = DivByZero.this.global
+        // A lista a phase-ekrol, amik utan futni fog (lehet meg runsBefore es runsRightAfter is)
+        val runsAfter = List[String]("refchecks")
+        // A mi phase-unk neve
+        val phaseName = DivByZero.this.name
+        // A phase factoryja
+        def newPhase(_prev: Phase) = new DivByZeroPhase(_prev)
+        
+        // A phase kodja
+        class DivByZeroPhase(prev: Phase) extends StdPhase(prev) {
+            // A nev ujra
+            override def name = DivByZero.this.name
+            // A plugin logika
+            // CompilationUnit: egy legfelso-szintu class/trait/object
+            def apply(unit: CompilationUnit): Unit = {
+                // unit.body: a CU AST-je (beletartozik a definicio is, tehat pl. class)
+                // Apply(Select(rcvr, nme.DIV), List(Literal(Constant(0)))) == rcvr.DIV(0)
+                // rcvr.tpe &lt;:&lt; definitions.IntClass.tpe == ha a rcvr tipusa kisebb-egyenlo, mint az Int
+                for ( tree @ Apply(Select(rcvr, nme.DIV), List(Literal(Constant(0)))) &lt;- unit.body
+                    if rcvr.tpe &lt;:&lt; definitions.IntClass.tpe)
+                {
+                    // Dobjunk compilation hibat
+                    global.reporter.error(tree.pos, "definitely division by zero")
+                }
+            }
+        }
+    }
+}</code></pre></div>
+                </div>
+                <div id="/section-4/page-4" class="ft-page" data-id="page-4">
+                    <h1>Plugin hasznalata</h1>
+                    <div class="ft-fragment"><p>scalac-plugin.xml</p><pre><code class="xml">&lt;plugin&gt;
+    &lt;name&gt;divbyzero&lt;/name&gt;
+    &lt;classname&gt;elte.scalacourse.DivByZero&lt;/classname&gt;
+&lt;/plugin&gt;</code></pre></div>
+                    <div class="ft-fragment"><p>Keszitenunk kell belole egy JARt</p><pre><code class="xml">mkdir classes
+scalac -d classes Plugin.scala
+cp scalac-plugin.xml classes
+(cd classes; jar cf ../divbyzero.jar .)</code></pre></div>
+                    <div class="ft-fragment"><p>Meg kell adnunk a compilernek a JAR eleresi utjat</p><pre><code class="xml">scalac -Xplugin:divbyzero.jar Test.scala</code></pre></div>
+                </div>
+                
+                <div id="/section-4/page-4" class="ft-page" data-id="page-4">
+                    <h1>Compiler plugin megfontolasok</h1>
+                    <p class="ft-fragment">Legtobbszor nincs rajuk szukseg: sima Scala kod elegendo, de ha nem, meg mindig ott vannak a makrok</p>
+                    <p class="ft-fragment">Quasiquote-ok elerhetoek itt is</p>
+                    <p class="ft-fragment"><code class="scala">-Ybrowse:&lt;phases&gt;</code>: A <phase-ek> utan egy GUI-ban bongeszhetjuk az AST-t</p>
+                    <p class="ft-fragment"><code class="scala">scala -Y</code>: Az osszes -Y opcio</p>
+                </div>
+            </div>
+                    
+                
+            <div class="ft-section" data-id="section-5">
+                <div id="/section-5/page-1" class="ft-page" data-id="page-3">
+                    <h1>Compiler infrastruktura</h1>
+                    <p class="ft-fragment">Toolbox API: Scala kodbol meghivhato, ami on-the-fly bytecode-ot general</p>
+                    <p class="ft-fragment">Quasiquote-ok hasznalhatoak itt is (akar meg a REPL-ben is)</p>
+                    <p class="ft-fragment">Egy meghivhato fuggvenyt kapunk vissza</p>
+                    <p class="ft-fragment">A String closure-e elerheto</p>
+                    <div class="ft-fragment"><pre><code class="scala">scala> val code = q"""println("compiled and run at runtime!")"""
+scala> val compiledCode = toolbox.compile(code)
+scala> val result = compiledCode()
+compiled and run at runtime!
+result: Any = ()</code></pre></div>  
+                    <p class="ft-fragment">Minden hivasnal ujra letrehoz egy compiler contextet: 2-3s minden hivas =&gt; probaljunk batchelni</p>
+                </div>
+            </div>
+            <div class="ft-section" data-id="section-6">
+                <div id="/section-6/page-1" class="ft-page" data-id="page-1">
+                    <h1>Feladat</h1>
+                    <p class="ft-fragment">Irjunk ki-be kapcsolhato assert-makrot! Legyen egy globalis flag, amivel az asserteket futtatjuk. Az assert hivas nezzen igy ki: assert(&lt;Boolean kifejezes&gt;, &lt;Uzenet, ha a kifejezes false&gt;). Az uzenet dobodjon mint egy AssertionError kivetel, es tartalmazza a kifejezes kodjat is.</p>
+                </div>
+            </div>  
+        
+        </div>
+                
+
+<!-- 	<a href="https://github.com/marcolago/flowtime.js"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a> -->
+
+	<script src="../../infra/js/brav1toolbox.js"></script>
+	<script src="../../infra/js/flowtime.js"></script>
+	<!-- <script src="js/flowtime.min.js"></script> -->
+	<script src="../../infra/assets/js/prism.js"></script>
+
+	<script type="text/javascript">
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1228618-10']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.backFromPageToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		// Flowtime.parallaxInPx(true);
+		//
+		// event management
+		// Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		Flowtime.onNavigation(onNavigation);
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+</body>
+</html>
