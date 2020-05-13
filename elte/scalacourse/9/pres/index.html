@@ -1,0 +1,404 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0 minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="marcolago">
+
+	<meta property="og:title" content="Flowtime.js A HTML Presentation Framework">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta property="og:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta property="og:site_name" content="Programfejlesztes Scalaban">
+	<meta property="fb:admins" content="1293500397">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://marcolago.github.io/flowtime.js/">
+	<meta name="twitter:title" content="Flowtime.js - A HTML Presentation Framework">
+	<meta name="twitter:description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+	<meta name="twitter:image" content="http://marcolago.github.io/flowtime.js/assets/img/share-image.jpg">
+	<meta name="twitter:creator" content="@marcolago">
+
+	<meta name="description" content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+
+	<title>Flowtime.js</title>
+	<link rel="stylesheet" href="../../infra/assets/css/reset.css">
+	<link rel="stylesheet" href="../../infra/css/flowtime.css">
+	<link rel="stylesheet" href="../../infra/css/themes/default.css">
+	<link rel="stylesheet" href="../../infra/assets/css/prism.css">
+
+
+	<link rel="apple-touch-icon-precomposed" 						href="../../infra/img/touch-icon-iphone.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="72x72" 		href="../../infra/img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="114x114" 	href="../../infra/img/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon-precomposed" 	sizes="144x144" 	href="../../infra/img/touch-icon-ipad-retina.png">
+
+	<link rel="apple-touch-startup-image" href="../../infra/img/startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" href="../../infra/img/startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+	<link rel="stylesheet" href="../../infra/highlight/styles/default.css">
+        <script src="../../infra/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body class="">
+
+	<div class="flowtime">
+		<div class="ft-section" data-id="section-1">
+			<div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="Options: An introduction">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<p class="page-title">Programfejlesztes Scalaban</p>
+						<p class="page-title">Scala libraryk</p>
+						<img src="../../infra/img/scala_logo.png">
+					</div>
+				</div>
+			</div>
+			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
+                            <h1>Mai temak</h1>
+                            <p class="ft-fragment">Shapeless</p>
+                            <p class="ft-fragment">ScalaZ</p>
+                            <p class="ft-fragment">Cats</p>
+			</div>
+                </div>
+		<div class="ft-section" data-id="section-2">
+			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
+                            <h1>Shapeless</h1>
+                            <p class="ft-fragment">Type class es dependent type alapu generikus programozas</p>
+                            <p class="ft-fragment"><a href="https://github.com/milessabin/shapeless">https://github.com/milessabin/shapeless</a></p>
+                            <div class="ft-fragment"><p>Hasznalhato Ammonite REPL-bol egyszeruen</p>
+                                <pre><code class="scala">curl -s https://raw.githubusercontent.com/milessabin/shapeless/master/scripts/try-shapeless.sh | bash</code></pre>
+                            </div>
+                            <div class="ft-fragment"><p>Maven dependency</p>
+                                <pre><code class="xml">&lt;dependency&gt;
+    &lt;groupId&gt;com.chuusai&lt;/groupId&gt;
+    &lt;artifactId&gt;shapeless_2.12&lt;/artifactId&gt;
+    &lt;version&gt;2.3.3&lt;/version&gt;
+&lt;/dependency&gt;</code></pre></div>
+                        </div>
+                        <div id="/section-2/page-2" class="ft-page" data-id="page-2">
+                            <h1>Shapeless feature-ok</h1>
+                            <p class="ft-fragment">Polimorfikus fuggvenyek</p>
+                            <p class="ft-fragment">Heterogen lista, heterogen map</p>
+                            <p class="ft-fragment">Singleton-tipusu literalok es symbolok</p>
+                            <p class="ft-fragment">Recordok</p>
+                            <p class="ft-fragment">Coproductok es tagged unionok</p>
+                            <p class="ft-fragment">Generikus case class hierarchiak</p>
+                            <p class="ft-fragment">Lencsek</p>
+                            <p class="ft-fragment">Es sok egyeb...</p>
+                        </div>
+                        <div id="/section-2/page-1" class="ft-page" data-id="page-1">
+                            <h1>Heterogen listak es polimorfikus fuggvenyek</h1>
+                            <div class="ft-fragment"><pre><code class="scala">import shapeless.poly._
+import shapeless._
+
+// tipushelyes heterogen lista
+val sets = Set(1d, 2d, 3d) :: Set("4", "5", "6") :: HNil
+
+// polimorfikus fuggveny: Setekrol Optionokre kepez
+object headOption extends (Set ~> Option) {
+    def apply[T](set: Set[T]): Option[T] = set.headOption
+}
+
+// map over hlist
+sets.map(head)</code></pre></div>
+                    </div>
+                    <div id="/section-2/page-1" class="ft-page" data-id="page-1">
+                            <h1>Recordok</h1>
+                            <div class="ft-fragment"><pre><code class="scala">import shapeless._
+import syntax.singleton._
+import record._
+import shapeless.test._
+
+// Singleton literal type - az adott literalbol kepez egy uj tipust: itt Int(23) es Int(24)
+// Ezek a tipusok nevei, nem konstruktor hivasok
+// sameTyped: makro, ami a ket kifejezes tipusat hasonlitja ossze, es forditasi hibat dob, ha nem egyeznek 
+// sameTyped(23.narrow)(24.narrow)
+
+// Record: key -> value parok heterogen listaja (ez ugye igazabol egy heterogen map)
+// Kulcsok singleton typed literalok => tipushelyes reprezentacio
+val person = ("name" ->> "John Doe") :: ("age" ->> 23) :: HNil
+
+// Compile-time hiba, nincs ilyen kulcs
+// println(person("address"))
+// Mint egy map:
+person.keys
+person.values
+
+// Ertek update egy mar letezo kulcsra
+val aYearLater = person + ("age" ->> 24)
+// Lekerdezheto a kulcshoz tartozo ertek
+println(aYearLater("age"))
+
+// Kulcs (es az erteke) eltavolitasa
+val personWithNameOnly = person - "age"
+// Compile-time hiba
+// personWithNameOnly("age")
+println(personWithNameOnly("name"))</code></pre></div>
+                    </div>
+                    <div id="/section-2/page-1" class="ft-page" data-id="page-1">
+                            <h1>Lencsek</h1>
+                            <div class="ft-fragment"><pre><code class="scala">import shapeless._
+
+case class Address(street : String, city : String, postcode : String)
+case class Person(name : String, age : Int, address : Address)
+
+val person = Person("John Doe", 23, Address("Main", "Hill Valley", "H1234"))
+println(person)
+// Case class-ok modositasa copyn keresztul: elegge korulmenyes, es itt csak 2 szint van meg
+val movedPerson = person.copy(address = person.address.copy(street = "OffMain"))
+println(movedPerson)
+
+// Lencse, ami rafokuszal egy struktura egy adott elemere
+// A lencse ujrahasznosithato. Kb mint egy query az adott strukturan belul (pl XPath XMLnel)
+// Akar el is menthetjuk a hasznos lencseket egy companion objectbe
+val streetLens = lens[Person] &gt;&gt; 'address &gt;&gt; 'street
+
+// Lekerdezes lencsevel
+println(streetLens.get(person))
+println(streetLens.get(movedPerson))
+
+// Modositas lencsevel
+val movedPerson2 = streetLens.set(person)("OffMain")
+println(movedPerson2)
+assert(movedPerson == movedPerson2)</code></pre></div>
+                    </div>
+                </div>
+                    
+                    <div class="ft-section" data-id="section-3">
+                        <div id="/section-3/page-1" class="ft-page" data-id="page-1">
+                            <h1>ScalaZ</h1>
+                            <p class="ft-fragment">Tisztan funkcionalis elvu programozas Scalaban</p>
+                            <p class="ft-fragment"><a href="https://github.com/scalaz/scala">https://github.com/scalaz/scalaz</a></p>
+                            <p class="ft-fragment">Rengeteg type class, makro es egyeb utility</p>
+                            <div class="ft-fragment"><p>Maven dependencyk</p>
+                                <pre><code class="xml">&lt;!-- https://mvnrepository.com/artifact/org.scalaz/scalaz-core --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.scalaz&lt;/groupId&gt;
+    &lt;artifactId&gt;scalaz-core_2.12&lt;/artifactId&gt;
+    &lt;version&gt;7.3.0&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!-- https://mvnrepository.com/artifact/org.scalaz/scalaz-effect --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.scalaz&lt;/groupId&gt;
+    &lt;artifactId&gt;scalaz-effect_2.12&lt;/artifactId&gt;
+    &lt;version&gt;7.3.0&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!-- https://mvnrepository.com/artifact/org.scalaz/scalaz-typelevel --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.scalaz&lt;/groupId&gt;
+    &lt;artifactId&gt;scalaz-typelevel_2.12&lt;/artifactId&gt;
+    &lt;version&gt;7.1.17&lt;/version&gt;
+&lt;/dependency&gt;</code></pre></div>
+                        </div>
+                        <div id="/section-3/page-2" class="ft-page" data-id="page-2">
+                            <h1>ScalaZ feature-ok</h1>
+                            <p class="ft-fragment">Equal, Order, Show, Read</p>
+                            <p class="ft-fragment">Enum</p>
+                            <p class="ft-fragment">Funktor, applikativ</p>
+                            <p class="ft-fragment">Monadok</p>
+                            <p class="ft-fragment">Szabad monadok</p>
+                            <p class="ft-fragment">\/, Validation</p>
+                            <p class="ft-fragment">Lencsek</p>
+                            <p class="ft-fragment">Arrow, parallel</p>
+                            <p class="ft-fragment">Memo</p>
+                            <p class="ft-fragment">Effect</p>
+                            <p class="ft-fragment">Es meg nagyon sok minden...</p>
+                        </div>
+                        <div id="/section-3/page-3" class="ft-page" data-id="page-3">
+                           <h1>Equal, Enum es type tageles</h1>
+                            <div class="ft-fragment"><pre><code class="scala">import scalaz._
+import Scalaz._
+import syntax.equal._
+
+// Hasonlo makro, mint a sameTyped
+//  1 === 2.0
+
+// Enumeralt ertekek generalasa
+val numbers = 3 |=> 5 // stream
+val numbers2 = 3 |-> 5 // list
+// stream - lazy, list - concrete
+println(numbers.toList)
+println(numbers2.toList)
+
+// Type tagging
+// Tipusok hasznalat szerinti megkulonboztetese. Pl. mertekegysegek: alapvetoen egy szam ertek, de
+// ket Double ket nagyon kulonobozo dolgot jelent, pl. tomeg es sebesseg
+// Type alias mukodhet(ne), de nagyon korulmenyes, pl type KiloGramDouble = Double; type KiloGramInt = Int
+// Ehelyett "ad-hoc" tageljuk a tipust
+sealed trait KiloGram
+// Ez maga a tagelo fuggveny, egy A-bol csinal egy A+Kilogram tipust
+def KiloGram[A](a: A): A @@ KiloGram = Tag[A, KiloGram](a)
+// Ezzel maris tudunk Double-lel tagelni
+val mass: Double @@ KiloGram = KiloGram(20.0)
+
+// A felhasznalas helyen megmondjuk, hogy szuksegunk van egy Int ertekre, ami KiloGramot reprezental
+def decreaseKiloGram(value: Int @@ KiloGram): Int @@ KiloGram = 
+    KiloGram(Tag.unwrap(value) - 1) // A Tag.unwrap adja vissza a valodi erteket
+
+println(decreaseKiloGram(KiloGram(10)))</code></pre></div>
+                        </div>
+                        <div id="/section-3/page-4" class="ft-page" data-id="page-4">
+                            <h1>Memo</h1>
+                            <p class="ft-fragment">Referentially transparent: egy adott bemeneti ertekre mindig ugyanazt a kimenetet adja vissza</p>
+                            <p class="ft-fragment">RT: szimbolikusan helyettesitheto az ertekkel</p>
+                            <p class="ft-fragment">Memoizacio: fuggveny bemenetehez a kalkulalt ertek megjegyzese es hasznalata</p>
+                            <div class="ft-fragment"><pre><code class="scala">def doubleComplex(input: Int): Int = {
+    // Szimulaljunk egy bonyolult szamitast
+    Thread.sleep(5000)
+    input * input
+}
+
+// Utility megmerni, hogy mennyi ideig futott egy fuggveny
+def timed[U](work: => U): U = {
+    val startTime = System.currentTimeMillis()
+    val data = work
+    val endTime = System.currentTimeMillis()
+    println(s"Timed(${endTime - startTime}): ${data}")
+    data
+}
+
+// Memo keszitese a fuggvenyunkbol
+val longRunningMemo = Memo.immutableHashMapMemo(doubleComplex)
+timed(longRunningMemo(1)) // 5000ms
+timed(longRunningMemo(1)) // 0ms
+timed(longRunningMemo(2)) // 5000ms
+timed(longRunningMemo(2)) // 0ms</code></pre></div>
+                        </div>
+                        
+                        <div id="/section-3/page-5" class="ft-page" data-id="page-5">
+                            <h1>Free monadok</h1>
+                            <p class="ft-fragment">A monadok egymastol fuggo szamitasokat reprezentalnak, amik a monadon belul maradnak</p>
+                            <p class="ft-fragment">Free monad: monad, ami atalkithato barmilyen mas monadda</p>
+                            <div class="ft-fragment"><p>Funktor: egy fuggveny, ami atalakit egy erteket egy belso kontexten belul: unwrap-apply-wrap</p>
+                                <pre><code class="scala">def map[A,B](fa: F[A])(f: A=>B): F[B]</code></pre>
+                            </div>
+                        </div>
+                        <div id="/section-3/page-6" class="ft-page" data-id="page-6">
+                            <h1>SQL tranzakcio free monaddal</h1>
+                            <div class="ft-fragment"><pre><code class="scala">case class SqlOp[A](op: Connection => A) // Ez egy SQL muvelet
+// A SQL muvelet Functor, ami vegrehajtja a muveletet
+implicit object SqlOpFunctor extends Functor[SqlOp] {
+    def map[A,B](a: SqlOp[A])(g: A => B) = SqlOp[B]((c:Connection) => g(a.op(c)))
+}
+type Sql[A] = Free[SqlOp,A] // A free monadunk
+
+// A kulonbozo SqlOp-ok kiemelese free monadda - ezek nem commitolhatnak!
+def sqlop1(): Sql[Boolean] = Free.liftF(SqlOp((conn:java.sql.Connection) => {
+    println("Running SQL OP1")
+    true
+}))
+def sqlop2(): Sql[Boolean] = Free.liftF(SqlOp((conn:java.sql.Connection) => {
+    println("Running SQL OP2")
+    true
+}))
+def emptysqlop(): Sql[Boolean] = Free.liftF(SqlOp((conn:java.sql.Connection) => {
+    println("Running Empty SQL")
+    true
+}))
+
+// A tranzakcionk SqlOp-ok kompozicioja
+def myTransaction(): Sql[Boolean] = for {
+    condition &lt;- sqlop1()
+    _ &lt;- if (condition) sqlop2() else emptysqlop()
+} yield condition
+
+myTransaction() // nem futtat meg le semmit, kell egy interpreter, ami tudja, hogyan kell banni a monadunkkal
+  
+// Az interpreter - az implicit funktor itt kerul atadasra
+def runTransactionImpl[A](conn: Connection, trans: Sql[A]): A = trans.fold(
+    (a: A) => a, // egy muvelettel mit kell kezdeni (=pointnak is hivjak)
+    (x: SqlOp[Sql[A]]) => runTransactionImpl(conn, x.op(conn)) // hogyan kell tovabbhaladni a kovetkezo muveletre
+)
+
+// Itt valoban vegrehajtjuk a tranzakciot
+runTransactionImpl(DB.connect(), myTransaction())</code></pre></div>
+                        </div>
+                </div>
+                    
+            <div class="ft-section" data-id="section-4">
+                <div id="/section-4/page-1" class="ft-page" data-id="page-1">
+                    <h1>Cats</h1>
+                        <p class="ft-fragment">Kategoria-elmeleti konstrukciok Scalaban</p>
+                        <p class="ft-fragment"><a href="https://typelevel.org/cats/">https://typelevel.org/cats/</a></p>
+                        <div class="ft-fragment"><p>Maven dependency</p>
+                            <pre><code class="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.typelevel&lt;/groupId&gt;
+    &lt;artifactId&gt;cats-core_2.12&lt;/artifactId&gt;
+    &lt;version&gt;2.1.1&lt;/version&gt;
+&lt;/dependency&gt;</code></pre></div>
+                    <p class="ft-fragment">Cel: kozertheto, modularis jol dokumentalt es hatekony funkcionalis elemek biztositasa</p>
+                    <p class="ft-fragment">A legtobb elem vagy a Std Lib kiegeszitese, vagy megtalalhato a Shapelessben vagy a ScalaZ-en</p>
+                </div>
+                
+                <div id="/section-4/page-2" class="ft-page" data-id="page-2">
+                    <h1>Cats feature-ok</h1>
+                    <p class="ft-fragment">Semigroup, monoid</p>
+                    <p class="ft-fragment">Applikativ, funktor</p>
+                    <p class="ft-fragment">Monad, comonad</p>
+                    <p class="ft-fragment">Funktorok kulonbozo varianciaval</p>
+                    <p class="ft-fragment">Parallel</p>
+                    <p class="ft-fragment">Bifunktor</p>
+                    <p class="ft-fragment">OptionT, EitherT</p>
+                    <p class="ft-fragment">NonEmptyList</p>
+                    <p class="ft-fragment">State, Validated</p>
+                    <p class="ft-fragment">Es egyebek...</p>
+                </div>
+            </div>
+        
+        </div>
+                
+
+<!-- 	<a href="https://github.com/marcolago/flowtime.js"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a> -->
+
+	<script src="../../infra/js/brav1toolbox.js"></script>
+	<script src="../../infra/js/flowtime.js"></script>
+	<!-- <script src="js/flowtime.min.js"></script> -->
+	<script src="../../infra/assets/js/prism.js"></script>
+
+	<script type="text/javascript">
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1228618-10']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.backFromPageToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		// Flowtime.parallaxInPx(true);
+		//
+		// event management
+		// Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		Flowtime.onNavigation(onNavigation);
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+</body>
+</html>
