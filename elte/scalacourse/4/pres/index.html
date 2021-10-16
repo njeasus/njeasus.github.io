@@ -208,7 +208,7 @@ object Monad {
 				<h1>Monad feladat</h1>
 				<p class="ft-fragment">Irjunk Maybe monadot!</p>
 				<p class="ft-fragment">Maybe/Just/Missing (Nothing-ot probaljuk ne tulterhelni)</p>
-				<div class="ft-fragment"><pre><code class="scala">trait Maybe[+A] {
+<!--				<div class="ft-fragment"><pre><code class="scala">trait Maybe[+A] {
     def flatMap[B](f: A => Maybe[B]): Maybe[B]
 }
 object Missing extends Maybe[Nothing] {
@@ -220,7 +220,7 @@ case class Just[A] private (v: A) extends Maybe[A] {
 case object Just {
     def apply[A](v: A) = new Just(v)
 }</code></pre>
-                                </div>  
+                                </div>  -->
                     </div>
                     
                 </div>
